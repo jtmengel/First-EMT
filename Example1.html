@@ -1,0 +1,76 @@
+<!doctype html5> 
+
+<html>  
+<script type="text/javascript" src="js/mootools.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="js/videobox.js"></script>
+<head>  
+	<meta charset="utf-8"/>  
+	<title></title>  
+  
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>  
+	<link rel="stylesheet" href="css/Example1.css"/>  
+	<link rel="stylesheet" href="css/videobox.css" type="text/css" media="screen" />
+</head>  
+  
+<body>  
+  
+  <nav>
+	<div id="back">  
+      <a href="#"><img src="media/images/arrowL.png" height=75px width=75px /></a>
+    </div>
+    <div id="options">
+      <a href="#"><img src="media/images/settings.png" height=75px width=75px /></a>
+	</div>
+	<div id="home">
+      <a href="#"><img src="media/images/home.png" height=75px width=75px /></a>
+	</div>
+    <div id="next">
+      <a href="#"><img src="media/images/arrowL.png" height=75px width=75px /></a>
+    </div>
+  </nav>
+
+  <section id="lang_list">
+	<div id="wrapper">
+    <div class="lang">
+	  <a id="video" href="#"><img src='media/images/america.jpg' height="113" width="200" alt='American lang' /></a>
+
+	</div>
+	<div class="lang">
+	  <a href='media/video/test.ogv' rel="vidbox" title="This is a test video"><img src='media/images/french.gif' height="113" width="200" alt='American lang' /></a>
+	</div>
+	<div class="lang">
+	  <a href='#'><img src='media/images/spain.gif' height="113" width="200" alt='American lang' /></a>
+	</div>
+	<div class="lang">
+	  <a href='#'><img src='media/images/america.jpg' height="113" width="200" alt='American lang' /></a>
+	</div>
+	<div class="lang">
+	  <a href='#'><img src='media/images/america.jpg' height="113" width="200" alt='American lang' /></a>
+	</div>
+	<div class="lang">
+	  <a href='#'><img src='media/images/america.jpg' height="113" width="200" alt='American lang' /></a>
+	</div>
+	<div class="lang">
+	  <a href='#'><img src='media/images/america.jpg' height="113" width="200" alt='American lang' /></a>
+	</div>
+	<div class="lang">
+	  <a href='#'><img src='media/images/america.jpg' height="113" width="200" alt='American lang' /></a>
+	</div>
+	
+	</div>
+  </section>
+  
+  <footer>  
+  </footer>  
+  
+<script type="text/javascript">
+	  $(document).ready(function() {
+		  $("a#video").fancybox({
+		'hideOnContentClick': true
+	});
+	  });
+  </script> 
+</body>  
+  
+</html> 
