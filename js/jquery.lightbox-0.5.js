@@ -44,7 +44,9 @@
 			keyToNext:				'n',		// (string) (n = next) Letter to show the next image.
 			// Don´t alter these variables in any way
 			imageArray:				[],
-			activeImage:			0
+			activeImage:			0,
+			// Toggle navigation
+			navigation: false
 		},settings);
 		// Caching the jQuery object with all elements matched
 		var jQueryMatchedObj = this; // This, in this context, refer to jQuery object
@@ -250,7 +252,7 @@
 			$('#lightbox-nav-btnPrev,#lightbox-nav-btnNext').css({ 'background' : 'transparent url(' + settings.imageBlank + ') no-repeat' });
 			
 			// Show the prev button, if not the first image in set
-			if ( settings.activeImage != 0 ) {
+			if ( settings.activeImage != 0 && settings.navigation ) {
 				if ( settings.fixedNavigation ) {
 					$('#lightbox-nav-btnPrev').css({ 'background' : 'url(' + settings.imageBtnPrev + ') left 15% no-repeat' })
 						.unbind()
@@ -274,7 +276,7 @@
 			}
 			
 			// Show the next button, if not the last image in set
-			if ( settings.activeImage != ( settings.imageArray.length -1 ) ) {
+			if ( settings.activeImage != ( settings.imageArray.length -1 ) && settings.navigation ) {
 				if ( settings.fixedNavigation ) {
 					$('#lightbox-nav-btnNext').css({ 'background' : 'url(' + settings.imageBtnNext + ') right 15% no-repeat' })
 						.unbind()
@@ -297,7 +299,9 @@
 				}
 			}
 			// Enable keyboard navigation
-			_enable_keyboard_navigation();
+			if ( settings.navigation ){
+				_enable_keyboard_navigation();
+			}
 		}
 		/**
 		 * Enable a support to keyboard navigation
