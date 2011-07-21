@@ -1,0 +1,315 @@
+<Question_list>
+	<Question>
+		<en>
+			May I verify your DOB?
+			<video>
+			</video>
+		</en>
+		<es>
+			¿Puedo verificar su fecha de nacimiento?
+		</es>
+		<fr>
+			Puis-je vérifier votre date de naissance?
+		</fr>
+	</Question>
+	<Question>
+		<en>
+			May I verify your address? Your phone number?
+			<video>
+			</video>
+		</en>
+		<es>
+			¿Puedo verificar su dirección? Su número de teléfono?
+		</es>
+		<fr>
+			Puis-je vérifier votre adresse? Votre numéro de téléphone?
+		</fr>
+	</Question>
+	<Question>
+		<en>
+			May I have your Insurance card and a picture ID?
+			<video>
+			</video>
+		</en>
+		<es>
+			¿Me puede dar su tarjeta de seguro y una identificación con foto?
+		</es>
+		<fr>
+			Puis-je avoir votre carte d'assurance et d'une photo d'identité?
+		</fr>
+	</Question>
+	<Question>
+		<en>
+			Can you verify your emergency contact? Phone number.
+			<video>
+			</video>
+		</en>
+		<es>
+			¿Se puede verificar su contacto de emergencia? Número de teléfono:
+		</es>
+		<fr>
+			Pouvez-vous vérifier votre contact d'urgence? Numéro de téléphone.
+		</fr>
+	</Question>
+	<Question>
+		<en>
+			What is the relationship to you?
+			<video>
+			</video>
+		</en>
+		<es>
+			¿Cuál es la relación con usted?
+		</es>
+		<fr>
+			Quelle est la relation avec vous?
+		</fr>
+	</Question>
+	<Question>
+		<en>
+			Any other changes in your personal information.
+			<video>
+			</video>
+		</en>
+		<es>
+			Cualquier otra modificación de sus datos personales.
+		</es>
+		<fr>
+			Toute autre modification de vos informations personnelles.
+		</fr>
+	</Question>
+	<Question>
+		<en>
+			I need you to hold on here, I need to verify your insurance.
+			<video>
+			</video>
+		</en>
+		<es>
+			Necesito que me mantenga aquí, tengo que verificar su seguro.
+		</es>
+		<fr>
+			J'ai besoin de vous pour tenir ici, j'ai besoin de vérifier votre assurance.
+		</fr>
+	</Question>
+	<Question>
+		<en>
+			Your PCP or primary care provider listed in the card is wrong. We will need you to sign this form for us to be able to change it with the insurance.
+			<video>
+			</video>
+		</en>
+		<es>
+			Su proveedor de atención primaria o PCP que figuran en la tarjeta está mal. Le necesidad de firmar este formulario para que podamos ser capaces de cambiar con el seguro.
+		</es>
+		<fr>
+			Votre fournisseur de soins PCP ou primaires énumérées dans la carte est fausse. Nous allons vous devez signer ce formulaire pour nous d'être en mesure de le changer avec l'assurance.
+		</fr>
+	</Question>
+	<Question>
+		<en>
+			You may have a seat the nurse will be calling you in a few minutes.
+			<video>
+			</video>
+		</en>
+		<es>
+			Usted puede tener un asiento de la enfermera se le llama en unos minutos.
+		</es>
+		<fr>
+			Vous pouvez avoir un siège à l'infirmière vous téléphonera dans quelques minutes.
+		</fr>
+	</Question>
+	<Question>
+		<en>
+			I would like to inform you that your provider is running late for 1 hour in the meantime you may have some coffee.
+			<video>
+			</video>
+		</en>
+		<es>
+			Me gustaría informarle de que su proveedor se retrasa durante 1 hora, mientras tanto, es posible que tenga un poco de café.
+		</es>
+		<fr>
+			Je tiens à vous informer que votre fournisseur est en retard pendant 1 heure dans l'intervalle, vous pouvez avoir un peu de café.
+		</fr>
+	</Question>
+	<Question>
+		<en>
+			Sorry for the inconvenience, I can offer you a food voucher.
+			<video>
+			</video>
+		</en>
+		<es>
+			Disculpa las molestias, puedo ofrecerle un vale de comida.
+		</es>
+		<fr>
+			Désolé pour le dérangement, je peux vous offrir un bon de nourriture.
+		</fr>
+	</Question>
+	<Question>
+		<en>
+			Would you like something to eat or drink?
+			<video>
+			</video>
+		</en>
+		<es>
+			¿Quieres algo de comer o beber?
+		</es>
+		<fr>
+			Aimeriez-vous quelque chose à manger ou à boire?
+		</fr>
+	</Question>
+	<Question>
+		<en>
+			Why are you here?
+			<video>
+			</video>
+		</en>
+		<es>
+			¿Por qué estás aquí?
+		</es>
+		<fr>
+			Pourquoi êtes vous ici?
+		</fr>
+	</Question>
+	<Question>
+		<en>
+			For how long have you had the problem?
+			<video>
+			</video>
+		</en>
+		<es>
+			¿Por cuánto tiempo ha tenido el problema?
+		</es>
+		<fr>
+			Pour combien de temps avez-vous eu le problème?
+		</fr>
+	</Question>
+	<Question>
+		<en>
+			Do you have any pain?
+			<video>
+			</video>
+		</en>
+		<es>
+			¿Tiene algún dolor?
+		</es>
+		<fr>
+			Avez-vous des douleurs?
+		</fr>
+	</Question>
+	<Question>
+		<en>
+			Are you taking any medicine for pain?
+			<video>
+			</video>
+		</en>
+		<es>
+			¿Está tomando alguna medicina para el dolor?
+		</es>
+		<fr>
+			Etes-vous de prendre tout médicament pour la douleur?
+		</fr>
+	</Question>
+	<Question>
+		<en>
+			Is this problem going anywhere in your body?
+			<video>
+			</video>
+		</en>
+		<es>
+			¿Este problema va a ninguna parte de tu cuerpo?
+		</es>
+		<fr>
+			Est ce problème va nulle part dans votre corps?
+		</fr>
+	</Question>
+	<Question>
+		<en>
+			Is there anyone sick in the house?
+			<video>
+			</video>
+		</en>
+		<es>
+			¿Hay alguien enfermo en la casa?
+		</es>
+		<fr>
+			Est-ce qu'il ya quelqu'un malade dans la maison?
+		</fr>
+	</Question>
+	<Question>
+		<en>
+			Have you ever had this problem?
+			<video>
+			</video>
+		</en>
+		<es>
+			¿Ha tenido este problema?
+		</es>
+		<fr>
+			Avez-vous déjà eu ce problème?
+		</fr>
+	</Question>
+	<Question>
+		<en>
+			I am going to check your blood pressure and your pulse.
+			<video>
+			</video>
+		</en>
+		<es>
+			Voy a revisar su presión arterial y el pulso.
+		</es>
+		<fr>
+			Je vais vérifier votre tension artérielle et votre pouls.
+		</fr>
+	</Question>
+	<Question>
+		<en>
+			I need to check your weight.
+			<video>
+			</video>
+		</en>
+		<es>
+			Tengo que controlar su peso.
+		</es>
+		<fr>
+			J'ai besoin de vérifier votre poids.
+		</fr>
+	</Question>
+		<Question>
+		<en>
+			What pharmacy do you use? Do you know the phone number?
+			<video>
+			</video>
+		</en>
+		<es>
+			Lo que la farmacia se utilizan? ¿Sabe el número de teléfono?
+		</es>
+		<fr>
+			Que la pharmacie que vous utilisez? Connaissez-vous le numéro de téléphone?
+		</fr>
+	</Question>
+	<Question>
+		<en>
+			Your doctor will be with you in ___________.
+			<video>
+			</video>
+		</en>
+		<es>
+			Su médico estará con usted en ___________.
+		</es>
+		<fr>
+			Votre médecin sera avec vous à ___________.
+		</fr>
+	</Question>
+	<Question>
+		<en>
+			Your doctor is with someone else right now and you will be next.
+			<video>
+			</video>
+		</en>
+		<es>
+			Su médico está con alguien más en este momento y que será el próximo.
+		</es>
+		<fr>
+			Votre médecin est avec quelqu'un d'autre en ce moment et vous serez la prochaine.
+		</fr>
+	</Question>
+</Question_list>
+	
