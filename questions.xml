@@ -1,5 +1,8 @@
 <Question_list>
 	<Question>
+		<type>
+			patient
+		</type>
 		<en>
 			May I verify your DOB?
 			<video>
@@ -13,6 +16,9 @@
 		</fr>
 	</Question>
 	<Question>
+		<type>
+			patient
+		</type>
 		<en>
 			May I verify your address? Your phone number?
 			<video>
@@ -26,6 +32,9 @@
 		</fr>
 	</Question>
 	<Question>
+		<type>
+			patient
+		</type>
 		<en>
 			May I have your Insurance card and a picture ID?
 			<video>
@@ -39,6 +48,9 @@
 		</fr>
 	</Question>
 	<Question>
+		<type>
+			patient
+		</type>
 		<en>
 			Can you verify your emergency contact? Phone number.
 			<video>
@@ -52,6 +64,9 @@
 		</fr>
 	</Question>
 	<Question>
+		<type>
+			patient
+		</type>
 		<en>
 			What is the relationship to you?
 			<video>
@@ -65,6 +80,9 @@
 		</fr>
 	</Question>
 	<Question>
+		<type>
+			patient
+		</type>
 		<en>
 			Any other changes in your personal information.
 			<video>
@@ -78,6 +96,9 @@
 		</fr>
 	</Question>
 	<Question>
+		<type>
+			patient
+		</type>
 		<en>
 			I need you to hold on here, I need to verify your insurance.
 			<video>
@@ -91,6 +112,9 @@
 		</fr>
 	</Question>
 	<Question>
+		<type>
+			patient
+		</type>
 		<en>
 			Your PCP or primary care provider listed in the card is wrong. We will need you to sign this form for us to be able to change it with the insurance.
 			<video>
@@ -104,6 +128,9 @@
 		</fr>
 	</Question>
 	<Question>
+		<type>
+			waiting
+		</type>
 		<en>
 			You may have a seat the nurse will be calling you in a few minutes.
 			<video>
@@ -117,6 +144,9 @@
 		</fr>
 	</Question>
 	<Question>
+		<type>
+			waiting
+		</type>
 		<en>
 			I would like to inform you that your provider is running late for 1 hour in the meantime you may have some coffee.
 			<video>
@@ -130,6 +160,9 @@
 		</fr>
 	</Question>
 	<Question>
+		<type>
+			waiting
+		</type>
 		<en>
 			Sorry for the inconvenience, I can offer you a food voucher.
 			<video>
@@ -143,6 +176,9 @@
 		</fr>
 	</Question>
 	<Question>
+		<type>
+			waiting
+		</type>
 		<en>
 			Would you like something to eat or drink?
 			<video>
@@ -156,6 +192,9 @@
 		</fr>
 	</Question>
 	<Question>
+		<type>
+			encounter
+		</type>
 		<en>
 			Why are you here?
 			<video>
@@ -169,6 +208,9 @@
 		</fr>
 	</Question>
 	<Question>
+		<type>
+			encounter
+		</type>
 		<en>
 			For how long have you had the problem?
 			<video>
@@ -182,6 +224,9 @@
 		</fr>
 	</Question>
 	<Question>
+		<type>
+			encounter
+		</type>
 		<en>
 			Do you have any pain?
 			<video>
@@ -195,6 +240,9 @@
 		</fr>
 	</Question>
 	<Question>
+		<type>
+			encounter
+		</type>
 		<en>
 			Are you taking any medicine for pain?
 			<video>
@@ -208,6 +256,9 @@
 		</fr>
 	</Question>
 	<Question>
+		<type>
+			encounter
+		</type>
 		<en>
 			Is this problem going anywhere in your body?
 			<video>
@@ -221,6 +272,9 @@
 		</fr>
 	</Question>
 	<Question>
+		<type>
+			encounter
+		</type>
 		<en>
 			Is there anyone sick in the house?
 			<video>
@@ -234,6 +288,9 @@
 		</fr>
 	</Question>
 	<Question>
+		<type>
+			encounter
+		</type>
 		<en>
 			Have you ever had this problem?
 			<video>
@@ -247,6 +304,9 @@
 		</fr>
 	</Question>
 	<Question>
+		<type>
+			encounter
+		</type>
 		<en>
 			I am going to check your blood pressure and your pulse.
 			<video>
@@ -260,6 +320,9 @@
 		</fr>
 	</Question>
 	<Question>
+		<type>
+			encounter
+		</type>
 		<en>
 			I need to check your weight.
 			<video>
@@ -273,6 +336,9 @@
 		</fr>
 	</Question>
 		<Question>
+		<type>
+			encounter
+		</type>
 		<en>
 			What pharmacy do you use? Do you know the phone number?
 			<video>
@@ -286,6 +352,9 @@
 		</fr>
 	</Question>
 	<Question>
+		<type>
+			waiting
+		</type>
 		<en>
 			Your doctor will be with you in ___________.
 			<video>
@@ -299,6 +368,9 @@
 		</fr>
 	</Question>
 	<Question>
+		<type>
+			waiting
+		</type>
 		<en>
 			Your doctor is with someone else right now and you will be next.
 			<video>
@@ -312,4 +384,3 @@
 		</fr>
 	</Question>
 </Question_list>
-	
