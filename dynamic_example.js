@@ -18,7 +18,7 @@ var question_list=_xmlDoc.getElementsByTagName("Question");
 var lang_acronym = {
 	 'en': 'English',
 	 'es': 'Spanish',
-	 'fr': 'French' }
+	 'fr': 'French' };
 
 /* 
  *  makeGroups() will sort the questions list into groups
@@ -32,18 +32,15 @@ var lang_acronym = {
  */
 function makeGroups()
 {
-	console.log("makeGroups - start");
 	for( j=0; j<question_list.length; j++ ) {
 		var qType = (question_list[j].getElementsByTagName("type"))[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '');
 		var makeNew = true;
-		
 		for( k=0; k<question_group_list.length; k++ ){
 			if( question_group_list[k][0] === qType ) {
 				question_group_list[k].push( question_list[j] ) ;
 				makeNew = false;
 			}
 		}
-		
 		if(makeNew) question_group_list.push( [qType] );
 	}
 }
@@ -52,6 +49,8 @@ function makeGroups()
  *	populateSelects
  *	
  *	@var child_list
+ *
+ *	Dynamically populates the available languages from lang_acronym
  */ 
 function populateSelects()
 {
@@ -74,7 +73,52 @@ function populateSelects()
  * @var $question
  * @var $top
  * @var $bottom
+ * @var $group-div
  */
+function printQuestions()
+{
+	$('#wrapper').empty();
+	var select = document.getElementById('lang_patient');
+	patient_lang = select.options[select.selectedIndex].value;
+	
+	var select = document.getElementById('lang_provider');
+	provider_lang = select.options[select.selectedIndex].value;
+	
+	for (h=0; h<question_group_list.length; h++) //For each group...
+	{
+		
+		var $group_button = $('<div class="slideToggler" id="'+question_group_list[h][0]+'"><h3>'+question_group_list[h][0]+'</h3></span>');
+		var $group_div = $('<div class="group-div" id="group-'+question_group_list[h][0]+'" />');
+		$group_button.append($group_div);
+		$('#wrapper').append($group_button);
+		
+		for (i=1; i<question_group_list[h].length; i++) //and for each question therein... 0 is string value, hence start at 1
+		{
+			var $question_div = $('<div id="question-div" class="question-div" />');
+			$('#group-'+question_group_list[h][0]).append($question_div);
+			var $anchor = $('<a href="media/video/test" id="anchor" class ="' + patient_lang + '" caption="' + (question_group_list[h][i].getElementsByTagName(patient_lang))[0].childNodes[0].nodeValue + '" >');
+			$question_div.append($anchor);
+			var $question = $('<div class="question">');
+			$anchor.append($question);
+			var $top = $('<div class="top">');
+			$question.append($top);
+			var $bottom = $('<div class="bottom">');
+			$question.append($bottom);
+			$top.append( (question_group_list[h][i].getElementsByTagName(patient_lang))[0].childNodes[0].nodeValue );
+			$bottom.append( (question_group_list[h][i].getElementsByTagName(provider_lang))[0].childNodes[0].nodeValue );			
+		}
+	//	makeButtons($('#span-'+question_group_list[h][0]), $('#group-'+question_group_list[h][0]));
+	}
+	$('.slideToggler').each(function(){
+		console.log( $(this.id) );
+	});
+	$('#wrapper.link').hide();
+	$('.'+ provider_lang).show();
+	$('.'+ patient_lang).show();
+	$('#wrapper a').lightBox();
+}
+
+/*
 function printQuestions()
 {
 	var select = document.getElementById('lang_patient');
@@ -83,7 +127,7 @@ function printQuestions()
 	var select = document.getElementById('lang_provider');
 	provider_lang = select.options[select.selectedIndex].value;
 	
-	for (i=0;i<question_list.length;i++)
+	for (i=0; i<question_list.length; i++) //and for each question therein...
 	{ 
 		var $question_div = $('<div id="question-div" class="question-div" />');
 		$("#wrapper").append($question_div);
@@ -102,6 +146,13 @@ function printQuestions()
 	$('.'+ provider_lang).show();
 	$('.'+ patient_lang).show();
 	$('#wrapper a').lightBox();
+}
+*/
+
+function makeItSlide(groupName)
+{
+	$('#group-'+groupName).slideToggle("slow");
+	console.log("SLIDIN'");
 }
 
 /*
