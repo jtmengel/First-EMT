@@ -1,7 +1,7 @@
 <Question_list>
 	<Question>
 		<type>
-			patient
+			Patient Questions
 		</type>
 		<en>
 			May I verify your DOB?
@@ -17,7 +17,7 @@
 	</Question>
 	<Question>
 		<type>
-			patient
+			Patient Questions
 		</type>
 		<en>
 			May I verify your address? Your phone number?
@@ -33,7 +33,7 @@
 	</Question>
 	<Question>
 		<type>
-			patient
+			Patient Questions
 		</type>
 		<en>
 			May I have your Insurance card and a picture ID?
@@ -49,7 +49,7 @@
 	</Question>
 	<Question>
 		<type>
-			patient
+			Patient Questions
 		</type>
 		<en>
 			Can you verify your emergency contact? Phone number.
@@ -65,7 +65,7 @@
 	</Question>
 	<Question>
 		<type>
-			patient
+			Patient Questions
 		</type>
 		<en>
 			What is the relationship to you?
@@ -81,7 +81,7 @@
 	</Question>
 	<Question>
 		<type>
-			patient
+			Patient Questions
 		</type>
 		<en>
 			Any other changes in your personal information.
@@ -97,7 +97,7 @@
 	</Question>
 	<Question>
 		<type>
-			patient
+			Patient Questions
 		</type>
 		<en>
 			I need you to hold on here, I need to verify your insurance.
@@ -113,7 +113,7 @@
 	</Question>
 	<Question>
 		<type>
-			patient
+			Patient Questions
 		</type>
 		<en>
 			Your PCP or primary care provider listed in the card is wrong. We will need you to sign this form for us to be able to change it with the insurance.
@@ -129,7 +129,7 @@
 	</Question>
 	<Question>
 		<type>
-			waiting
+			Patient Questions
 		</type>
 		<en>
 			You may have a seat the nurse will be calling you in a few minutes.
@@ -145,7 +145,7 @@
 	</Question>
 	<Question>
 		<type>
-			waiting
+			Waiting Questions
 		</type>
 		<en>
 			I would like to inform you that your provider is running late for 1 hour in the meantime you may have some coffee.
@@ -161,7 +161,7 @@
 	</Question>
 	<Question>
 		<type>
-			waiting
+			Waiting Questions
 		</type>
 		<en>
 			Sorry for the inconvenience, I can offer you a food voucher.
@@ -177,7 +177,7 @@
 	</Question>
 	<Question>
 		<type>
-			waiting
+			Waiting Questions
 		</type>
 		<en>
 			Would you like something to eat or drink?
@@ -193,7 +193,7 @@
 	</Question>
 	<Question>
 		<type>
-			encounter
+			Encounter Questions
 		</type>
 		<en>
 			Why are you here?
@@ -209,7 +209,7 @@
 	</Question>
 	<Question>
 		<type>
-			encounter
+			Encounter Questions
 		</type>
 		<en>
 			For how long have you had the problem?
@@ -225,7 +225,7 @@
 	</Question>
 	<Question>
 		<type>
-			encounter
+			Encounter Questions
 		</type>
 		<en>
 			Do you have any pain?
@@ -241,7 +241,7 @@
 	</Question>
 	<Question>
 		<type>
-			encounter
+			Encounter Questions
 		</type>
 		<en>
 			Are you taking any medicine for pain?
@@ -257,7 +257,7 @@
 	</Question>
 	<Question>
 		<type>
-			encounter
+			Encounter Questions
 		</type>
 		<en>
 			Is this problem going anywhere in your body?
@@ -273,7 +273,7 @@
 	</Question>
 	<Question>
 		<type>
-			encounter
+			Encounter Questions
 		</type>
 		<en>
 			Is there anyone sick in the house?
@@ -289,7 +289,7 @@
 	</Question>
 	<Question>
 		<type>
-			encounter
+			Encounter Questions
 		</type>
 		<en>
 			Have you ever had this problem?
@@ -305,7 +305,7 @@
 	</Question>
 	<Question>
 		<type>
-			encounter
+			Encounter Questions
 		</type>
 		<en>
 			I am going to check your blood pressure and your pulse.
@@ -321,7 +321,7 @@
 	</Question>
 	<Question>
 		<type>
-			encounter
+			Encounter Questions
 		</type>
 		<en>
 			I need to check your weight.
@@ -337,7 +337,7 @@
 	</Question>
 		<Question>
 		<type>
-			encounter
+			Encounter Questions
 		</type>
 		<en>
 			What pharmacy do you use? Do you know the phone number?
@@ -353,7 +353,7 @@
 	</Question>
 	<Question>
 		<type>
-			waiting
+			Waiting Questions
 		</type>
 		<en>
 			Your doctor will be with you in ___________.
@@ -369,7 +369,7 @@
 	</Question>
 	<Question>
 		<type>
-			waiting
+			Waiting Questions
 		</type>
 		<en>
 			Your doctor is with someone else right now and you will be next.
