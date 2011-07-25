@@ -1,0 +1,69 @@
+<!doctype html5> 
+
+<html>  
+<script type="text/javascript" src="dynamic_example.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+    
+<head>  
+	<meta charset="utf-8"/>  
+	<title></title>  
+  
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>  
+	<link rel="stylesheet" href="css/Example1.css"/>  
+	<link rel="stylesheet" href="css/jquery.lightbox-0.5.css" media="screen" />
+</head>  
+   
+<body>  
+  
+  <nav>
+	<div id="back">  
+      <a href="#"><img src="media/images/arrowL.png" height=75px width=75px /></a>
+    </div>
+    <div id="options">
+      <a href="#"><img src="media/images/settings.png" height=75px width=75px /></a>
+	</div>
+	<div id="home">
+      <a href="#"><img src="media/images/home.png" height=75px width=75px /></a>
+	</div>
+    <div id="next" class="flipH">
+      <a href="#"><img src="media/images/arrowL.png" height=75px width=75px /></a>
+    </div>
+  </nav>
+
+  <section id="lang_list">
+	  
+	Provider's language 
+	<select id="lang_provider">
+	<option value="en" selected="selected" >English</option>
+	<option value="es">Spanish</option>
+	<option value="fr">French</option>
+	</select>
+	
+	Patient's language 
+	<select id="lang_patient">
+	<option value="en">English</option>
+	<option value="es" selected="selected">Spanish</option>
+	<option value="fr">French</option>
+	</select>
+	
+	<div id="wrapper">
+		
+		<script>
+			$("#lang_provider").change(refreshQuestions);
+			$("#lang_patient").change(refreshQuestions);
+			makeGroups();
+			printQuestions();
+		</script>
+			
+	</div>
+  </section>
+  
+  <footer>  
+  </footer>   
+
+</body>  
+
+
+  
+</html> 

@@ -1,19 +1,13 @@
 <!doctype html5> 
 
 <html>  
-<script type="text/javascript" src="dynamic_example.js"></script>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
-    
-<head>  
-	<meta charset="utf-8"/>  
-	<title></title>  
-  
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>  
+<script type="text/javascript" src="js/mootools.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<head>   
 	<link rel="stylesheet" href="css/Example1.css"/>  
-	<link rel="stylesheet" href="css/jquery.lightbox-0.5.css" media="screen" />
+	<link rel="stylesheet" href="css/videobox.css" type="text/css" media="screen" />
 </head>  
-   
+  
 <body>  
   
   <nav>
@@ -27,43 +21,26 @@
       <a href="#"><img src="media/images/home.png" height=75px width=75px /></a>
 	</div>
     <div id="next" class="flipH">
-      <a href="#"><img src="media/images/arrowL.png" height=75px width=75px /></a>
+      <a href="Example3.html"><img src="media/images/arrowL.png" height=75px width=75px /></a>
     </div>
   </nav>
 
   <section id="lang_list">
-	  
-	Provider's language 
-	<select id="lang_provider">
-	<option value="en" selected="selected" >English</option>
-	<option value="es">Spanish</option>
-	<option value="fr">French</option>
-	</select>
-	
-	Patient's language 
-	<select id="lang_patient">
-	<option value="en">English</option>
-	<option value="es" selected="selected">Spanish</option>
-	<option value="fr">French</option>
-	</select>
-	
 	<div id="wrapper">
-		
-		<script>
-			$("#lang_provider").change(refreshQuestions);
-			$("#lang_patient").change(refreshQuestions);
-			makeGroups();
-			printQuestions();
-		</script>
-			
+    <div class="lang">
+	  <a id="video" href="#"><img src='media/images/america.jpg' height="113" width="200" alt='American lang' /></a>
+
+	</div>
+	<div class="lang">
+	  <a href='#'><img src='media/images/french.gif' height="113" width="200" alt='American lang' /></a>
+	</div>
+	<div class="lang">
+	  <a href='#'><img src='media/images/spain.gif' height="113" width="200" alt='American lang' /></a>
+	</div>
+	
 	</div>
   </section>
-  
-  <footer>  
-  </footer>   
-
+<script type="text/javascript" src="js/videobox.js"></script>
 </body>  
-
-
   
 </html> 
