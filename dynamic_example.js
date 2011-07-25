@@ -96,9 +96,9 @@ function printQuestions()
 		for (i=1; i<question_group_list[h].length; i++) //and for each question therein... 0 is string value, hence start at 1
 		{
 			var $question_div = $('<div id="question-div" class="question-div" />');
-			//$('#group-'+question_group_list[h][0][0]).append($question_div);
 			$( question_group_list[h][0][2] ).append($question_div);
 			var $anchor = $('<a href="media/video/test" id="anchor" class ="' + patient_lang + '" caption="' + (question_group_list[h][i].getElementsByTagName(patient_lang))[0].childNodes[0].nodeValue + '" >');
+			//$question_div.append('<div style="float:right;">TEST ME AHA!</div>'); ///////// DELETE ME
 			$question_div.append($anchor);
 			var $question = $('<div class="question">');
 			$anchor.append($question);
@@ -121,8 +121,8 @@ function printQuestions()
 
 function makeItSlide(passedArray)
 {
-	passedArray[1].click( function(){
-		passedArray[2].slideToggle('slow');
+	passedArray[1].find('h3').click( function(){
+		passedArray[2].slideToggle('fast');
 	});
 }
 
