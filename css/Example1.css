@@ -110,7 +110,12 @@ a {
 	display:block;
 }
 
+.slideToggler{
+}
+
 h3{
+
+	cursor: pointer; cursor: hand;
 	background-color: #C6C6FF;
 	border-radius: 20px 20px 20px 20px;
 	border: 1px solid black;
