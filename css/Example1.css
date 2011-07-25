@@ -109,3 +109,12 @@ a {
 .span-button{
 	display:block;
 }
+
+h3{
+	background-color: #C6C6FF;
+	border-radius: 20px 20px 20px 20px;
+	border: 1px solid black;
+    font-family: fantasy;
+    margin: 9px auto 0;
+    width: 300px;
+}
