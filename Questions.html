@@ -18,13 +18,13 @@
   
   <nav>
 	<div id="back">  
-      <a href="#"><img src="media/images/arrowL.png" height=75px width=75px /></a>
+      <a href="./First_EMT.html"><img src="media/images/arrowL.png" height=75px width=75px /></a>
     </div>
     <div id="options">
       <a href="#"><img src="media/images/settings.png" height=75px width=75px /></a>
 	</div>
 	<div id="home">
-      <a href="#"><img src="media/images/home.png" height=75px width=75px /></a>
+      <a href="./First_EMT.html"><img src="media/images/home.png" height=75px width=75px /></a>
 	</div>
     <div id="next" class="flipH">
       <a href="#"><img src="media/images/arrowL.png" height=75px width=75px /></a>
@@ -32,24 +32,11 @@
   </nav>
 
   <section id="lang_list">
-	  
-	Provider's language 
-	<select id="lang_provider">
-	<option value="en" selected="selected" >English</option>
-	<option value="es">Spanish</option>
-	<option value="fr">French</option>
-	</select>
-	
-	Patient's language 
-	<select id="lang_patient">
-	<option value="en">English</option>
-	<option value="es" selected="selected">Spanish</option>
-	<option value="fr">French</option>
-	</select>
 	
 	<div id="wrapper">
 		
 		<script>
+			populateSelects();
 			$("#lang_provider").change(refreshQuestions);
 			$("#lang_patient").change(refreshQuestions);
 			makeGroups();

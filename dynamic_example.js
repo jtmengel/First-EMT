@@ -58,15 +58,34 @@ function makeGroups()
  */ 
 function populateSelects()
 {
-	var child_list = question_list[0].childNodes;
-	console.log( child_list);
+	var url = $(location).attr('href');
+	var lang = url.split("=")[1];
+		
+	var lang_patient = $('<select id="lang_patient">');
+	var lang_provider = $('<select id="lang_provider">');
 	
-	for (i=0; i<child_list.length;i++)
+	$.each(lang_acronym, function(key, value) 
 	{
-		//console.log(child_list[i].nodeName);
-		$('#lang_patient').append('<option value="' + child_list[i].nodeName + 
-		  '>' + lang_acronym[child_list[i].nodeName] + '</option>'); 
-	}
+		console.log(key + " " + value + " " + lang);
+		if (key === lang){
+			lang_patient.append('<option selected="selected" value="' + key + 
+			'">' + value + '</option>'); 
+		} else {
+			lang_patient.append('<option value="' + key + 
+			'">' + value + '</option>'); 
+		}
+		if (key === 'en'){
+			lang_provider.append('<option selected="selected" value="' + key + 
+			'">' + value + '</option>'); 
+		} else {
+			lang_provider.append('<option value="' + key + 
+			'">' + value + '</option>'); 
+		}		
+	});
+	$('#lang_list').prepend(lang_patient);
+	$('#lang_list').prepend('Patient\'s language');
+	$('#lang_list').prepend(lang_provider);
+	$('#lang_list').prepend('Provider\'s language');
 }
 
 /*
