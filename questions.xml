@@ -6,13 +6,20 @@
 		<en>
 			May I verify your DOB?
 			<video>
+				test
 			</video>
 		</en>
 		<es>
 			¿Puedo verificar su fecha de nacimiento?
+			<video>
+				test
+			</video>
 		</es>
 		<fr>
 			Puis-je vérifier votre date de naissance?
+			<video>
+				test
+			</video>
 		</fr>
 	</Question>
 	<Question>
@@ -22,13 +29,20 @@
 		<en>
 			May I verify your address? Your phone number?
 			<video>
+				test
 			</video>
 		</en>
 		<es>
 			¿Puedo verificar su dirección? Su número de teléfono?
+			<video>
+				test
+			</video>
 		</es>
 		<fr>
 			Puis-je vérifier votre adresse? Votre numéro de téléphone?
+			<video>
+				test
+			</video>
 		</fr>
 	</Question>
 	<Question>
@@ -38,13 +52,20 @@
 		<en>
 			May I have your Insurance card and a picture ID?
 			<video>
+				test
 			</video>
 		</en>
 		<es>
 			¿Me puede dar su tarjeta de seguro y una identificación con foto?
+			<video>
+				test
+			</video>
 		</es>
 		<fr>
 			Puis-je avoir votre carte d'assurance et d'une photo d'identité?
+			<video>
+				test
+			</video>
 		</fr>
 	</Question>
 	<Question>
@@ -54,13 +75,20 @@
 		<en>
 			Can you verify your emergency contact? Phone number.
 			<video>
+				test
 			</video>
 		</en>
 		<es>
 			¿Se puede verificar su contacto de emergencia? Número de teléfono:
+			<video>
+				test
+			</video>
 		</es>
 		<fr>
 			Pouvez-vous vérifier votre contact d'urgence? Numéro de téléphone.
+			<video>
+				test
+			</video>
 		</fr>
 	</Question>
 	<Question>
@@ -70,13 +98,20 @@
 		<en>
 			What is the relationship to you?
 			<video>
+				video
 			</video>
 		</en>
 		<es>
 			¿Cuál es la relación con usted?
+			<video>
+				test
+			</video>
 		</es>
 		<fr>
 			Quelle est la relation avec vous?
+			<video>
+				test
+			</video>
 		</fr>
 	</Question>
 	<Question>
@@ -86,13 +121,20 @@
 		<en>
 			Any other changes in your personal information.
 			<video>
+				test
 			</video>
 		</en>
 		<es>
 			Cualquier otra modificación de sus datos personales.
+			<video>
+				test
+			</video>
 		</es>
 		<fr>
 			Toute autre modification de vos informations personnelles.
+			<video>
+				test
+			</video>
 		</fr>
 	</Question>
 	<Question>
@@ -102,13 +144,20 @@
 		<en>
 			I need you to hold on here, I need to verify your insurance.
 			<video>
+				test
 			</video>
 		</en>
 		<es>
 			Necesito que me mantenga aquí, tengo que verificar su seguro.
+			<video>
+				test
+			</video>
 		</es>
 		<fr>
 			J'ai besoin de vous pour tenir ici, j'ai besoin de vérifier votre assurance.
+			<video>
+				test
+			</video>
 		</fr>
 	</Question>
 	<Question>
@@ -118,13 +167,20 @@
 		<en>
 			Your PCP or primary care provider listed in the card is wrong. We will need you to sign this form for us to be able to change it with the insurance.
 			<video>
+				test
 			</video>
 		</en>
 		<es>
 			Su proveedor de atención primaria o PCP que figuran en la tarjeta está mal. Le necesidad de firmar este formulario para que podamos ser capaces de cambiar con el seguro.
+			<video>
+				test
+			</video>
 		</es>
 		<fr>
 			Votre fournisseur de soins PCP ou primaires énumérées dans la carte est fausse. Nous allons vous devez signer ce formulaire pour nous d'être en mesure de le changer avec l'assurance.
+			<video>
+				test
+			</video>
 		</fr>
 	</Question>
 	<Question>
@@ -134,13 +190,20 @@
 		<en>
 			You may have a seat the nurse will be calling you in a few minutes.
 			<video>
+				test
 			</video>
 		</en>
 		<es>
 			Usted puede tener un asiento de la enfermera se le llama en unos minutos.
+			<video>
+				test
+			</video>
 		</es>
 		<fr>
 			Vous pouvez avoir un siège à l'infirmière vous téléphonera dans quelques minutes.
+			<video>
+				test
+			</video>
 		</fr>
 	</Question>
 	<Question>
@@ -150,13 +213,20 @@
 		<en>
 			I would like to inform you that your provider is running late for 1 hour in the meantime you may have some coffee.
 			<video>
+				test
 			</video>
 		</en>
 		<es>
 			Me gustaría informarle de que su proveedor se retrasa durante 1 hora, mientras tanto, es posible que tenga un poco de café.
+			<video>
+				test
+			</video>
 		</es>
 		<fr>
 			Je tiens à vous informer que votre fournisseur est en retard pendant 1 heure dans l'intervalle, vous pouvez avoir un peu de café.
+			<video>
+				test
+			</video>
 		</fr>
 	</Question>
 	<Question>
@@ -166,13 +236,20 @@
 		<en>
 			Sorry for the inconvenience, I can offer you a food voucher.
 			<video>
+				test
 			</video>
 		</en>
 		<es>
 			Disculpa las molestias, puedo ofrecerle un vale de comida.
+			<video>
+				test
+			</video>
 		</es>
 		<fr>
 			Désolé pour le dérangement, je peux vous offrir un bon de nourriture.
+			<video>
+				test
+			</video>
 		</fr>
 	</Question>
 	<Question>
@@ -182,13 +259,20 @@
 		<en>
 			Would you like something to eat or drink?
 			<video>
+				test
 			</video>
 		</en>
 		<es>
 			¿Quieres algo de comer o beber?
+			<video>
+				test
+			</video>
 		</es>
 		<fr>
 			Aimeriez-vous quelque chose à manger ou à boire?
+			<video>
+				test
+			</video>
 		</fr>
 	</Question>
 	<Question>
@@ -198,13 +282,20 @@
 		<en>
 			Why are you here?
 			<video>
+				test
 			</video>
 		</en>
 		<es>
 			¿Por qué estás aquí?
+			<video>
+				test
+			</video>
 		</es>
 		<fr>
 			Pourquoi êtes vous ici?
+			<video>
+				test
+			</video>
 		</fr>
 	</Question>
 	<Question>
@@ -214,13 +305,20 @@
 		<en>
 			For how long have you had the problem?
 			<video>
+				test
 			</video>
 		</en>
 		<es>
 			¿Por cuánto tiempo ha tenido el problema?
+			<video>
+				test
+			</video>
 		</es>
 		<fr>
 			Pour combien de temps avez-vous eu le problème?
+			<video>
+				test
+			</video>
 		</fr>
 	</Question>
 	<Question>
@@ -230,13 +328,20 @@
 		<en>
 			Do you have any pain?
 			<video>
+				test
 			</video>
 		</en>
 		<es>
 			¿Tiene algún dolor?
+			<video>
+				test
+			</video>
 		</es>
 		<fr>
 			Avez-vous des douleurs?
+			<video>
+				test
+			</video>
 		</fr>
 	</Question>
 	<Question>
@@ -246,13 +351,20 @@
 		<en>
 			Are you taking any medicine for pain?
 			<video>
+				test
 			</video>
 		</en>
 		<es>
 			¿Está tomando alguna medicina para el dolor?
+			<video>
+				test
+			</video>
 		</es>
 		<fr>
 			Etes-vous de prendre tout médicament pour la douleur?
+			<video>
+				test
+			</video>
 		</fr>
 	</Question>
 	<Question>
@@ -262,13 +374,20 @@
 		<en>
 			Is this problem going anywhere in your body?
 			<video>
+				test
 			</video>
 		</en>
 		<es>
 			¿Este problema va a ninguna parte de tu cuerpo?
+			<video>
+				test
+			</video>
 		</es>
 		<fr>
 			Est ce problème va nulle part dans votre corps?
+			<video>
+				test
+			</video>
 		</fr>
 	</Question>
 	<Question>
@@ -278,13 +397,20 @@
 		<en>
 			Is there anyone sick in the house?
 			<video>
+				test
 			</video>
 		</en>
 		<es>
 			¿Hay alguien enfermo en la casa?
+			<video>
+				test
+			</video>
 		</es>
 		<fr>
 			Est-ce qu'il ya quelqu'un malade dans la maison?
+			<video>
+				test
+			</video>
 		</fr>
 	</Question>
 	<Question>
@@ -294,13 +420,20 @@
 		<en>
 			Have you ever had this problem?
 			<video>
+				test
 			</video>
 		</en>
 		<es>
 			¿Ha tenido este problema?
+			<video>
+				test
+			</video>
 		</es>
 		<fr>
 			Avez-vous déjà eu ce problème?
+			<video>
+				test
+			</video>
 		</fr>
 	</Question>
 	<Question>
@@ -310,13 +443,20 @@
 		<en>
 			I am going to check your blood pressure and your pulse.
 			<video>
+				test
 			</video>
 		</en>
 		<es>
 			Voy a revisar su presión arterial y el pulso.
+			<video>
+				test
+			</video>
 		</es>
 		<fr>
 			Je vais vérifier votre tension artérielle et votre pouls.
+			<video>
+				test
+			</video>
 		</fr>
 	</Question>
 	<Question>
@@ -326,13 +466,20 @@
 		<en>
 			I need to check your weight.
 			<video>
+				test
 			</video>
 		</en>
 		<es>
 			Tengo que controlar su peso.
+			<video>
+				test
+			</video>
 		</es>
 		<fr>
 			J'ai besoin de vérifier votre poids.
+			<video>
+				test
+			</video>
 		</fr>
 	</Question>
 		<Question>
@@ -342,13 +489,20 @@
 		<en>
 			What pharmacy do you use? Do you know the phone number?
 			<video>
+				test
 			</video>
 		</en>
 		<es>
 			Lo que la farmacia se utilizan? ¿Sabe el número de teléfono?
+			<video>
+				test
+			</video>
 		</es>
 		<fr>
 			Que la pharmacie que vous utilisez? Connaissez-vous le numéro de téléphone?
+			<video>
+				test
+			</video>
 		</fr>
 	</Question>
 	<Question>
@@ -358,13 +512,20 @@
 		<en>
 			Your doctor will be with you in ___________.
 			<video>
+				test
 			</video>
 		</en>
 		<es>
 			Su médico estará con usted en ___________.
+			<video>
+				test
+			</video>
 		</es>
 		<fr>
 			Votre médecin sera avec vous à ___________.
+			<video>
+				test
+			</video>
 		</fr>
 	</Question>
 	<Question>
@@ -374,13 +535,20 @@
 		<en>
 			Your doctor is with someone else right now and you will be next.
 			<video>
+				test
 			</video>
 		</en>
 		<es>
 			Su médico está con alguien más en este momento y que será el próximo.
+			<video>
+				test
+			</video>
 		</es>
 		<fr>
 			Votre médecin est avec quelqu'un d'autre en ce moment et vous serez la prochaine.
+			<video>
+				test
+			</video>
 		</fr>
 	</Question>
 </Question_list>

@@ -116,7 +116,8 @@ function printQuestions()
 		{
 			var $question_div = $('<div id="question-div" class="question-div" />');
 			$( question_group_list[h][0][2] ).append($question_div);
-			var $anchor = $('<a href="media/video/test" id="anchor" class ="' + patient_lang + '" caption="' + (question_group_list[h][i].getElementsByTagName(patient_lang))[0].childNodes[0].nodeValue + '" >');
+			console.log((question_group_list[h][i].getElementsByTagName(patient_lang))[0].childNodes[0].nodeValue);
+			var $anchor = $('<a href="media/video/'+ (question_group_list[h][i].getElementsByTagName(patient_lang))[0].getElementsByTagName('video')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '') + '" id="anchor" class ="' + patient_lang + '" caption="' + (question_group_list[h][i].getElementsByTagName(patient_lang))[0].childNodes[0].nodeValue + '" >');
 			//$question_div.append('<div class="question-buttons"><div>First Opt</div><br /><div>Second Opt</div><br /><div>Third Opt</button></div>'); // - DELETE ME
 			$question_div.append($anchor);
 			var $question = $('<div class="question">');
