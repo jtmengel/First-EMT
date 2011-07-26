@@ -98,7 +98,7 @@ function printQuestions()
 			var $question_div = $('<div id="question-div" class="question-div" />');
 			$( question_group_list[h][0][2] ).append($question_div);
 			var $anchor = $('<a href="media/video/test" id="anchor" class ="' + patient_lang + '" caption="' + (question_group_list[h][i].getElementsByTagName(patient_lang))[0].childNodes[0].nodeValue + '" >');
-			$question_div.append('<div class="question-buttons">OH HERRO</div>'); ///////// DELETE ME
+//			$question_div.append('<div class="question-buttons">OH HERRO</div>'); ///////// DELETE ME
 			$question_div.append($anchor);
 			var $question = $('<div class="question">');
 			$anchor.append($question);
