@@ -90,7 +90,6 @@ function printQuestions()
 	
 	for (h=0; h<question_group_list.length; h++) //For each group...
 	{
-		question_group_list[h][0][2].css("display","none");
 		question_group_list[h][0][1].append(question_group_list[h][0][2]);
 		$('#wrapper').append( question_group_list[h][0][1] );
 		
@@ -99,7 +98,7 @@ function printQuestions()
 			var $question_div = $('<div id="question-div" class="question-div" />');
 			$( question_group_list[h][0][2] ).append($question_div);
 			var $anchor = $('<a href="media/video/test" id="anchor" class ="' + patient_lang + '" caption="' + (question_group_list[h][i].getElementsByTagName(patient_lang))[0].childNodes[0].nodeValue + '" >');
-//			$question_div.append('<div class="question-buttons">OH HERRO</div>'); ///////// DELETE ME
+			//$question_div.append('<div class="question-buttons"><div>First Opt</div><br /><div>Second Opt</div><br /><div>Third Opt</button></div>'); // - DELETE ME
 			$question_div.append($anchor);
 			var $question = $('<div class="question">');
 			$anchor.append($question);
@@ -137,3 +136,15 @@ function refreshQuestions()
 	$(".question-div").remove();
 	printQuestions();
 }
+
+/*
+ *	collapseQuestions
+ *
+ *	Closes all of the question groups
+ */
+
+function collapseQuestions(){
+	for (h=0; h<question_group_list.length; h++) //For each group...
+	{
+		question_group_list[h][0][2].css("display","none");
+	}}

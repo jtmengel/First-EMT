@@ -112,7 +112,7 @@ a {
 .question-buttons{
 	float:right;
 	background:blue;
-	height:inherit 100%;
+	height:inherit;
 	width:inherit 20%;
 	clear:none;
 }
@@ -125,4 +125,9 @@ h3{
     font-family: fantasy;
     margin: 9px auto 0;
     width: 300px;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+
 }
