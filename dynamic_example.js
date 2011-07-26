@@ -90,6 +90,7 @@ function printQuestions()
 	
 	for (h=0; h<question_group_list.length; h++) //For each group...
 	{
+		question_group_list[h][0][2].css("display","none");
 		question_group_list[h][0][1].append(question_group_list[h][0][2]);
 		$('#wrapper').append( question_group_list[h][0][1] );
 		
