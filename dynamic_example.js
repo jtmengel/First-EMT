@@ -3,11 +3,12 @@
  * Scott JT Mengel (slm8604 [at] gmail.com]
  * Controller for question page. Dynamically loads questions from XML
  * 
- * @constructor lang_acronym
  * @constructor _xmlhttp
  * @constructor _xmlDoc
  * @constructor question_list
  * @constructor question_group_list
+ * @constructor lang_acronym
+ * @constructor lang_list
  */
 _xmlhttp = new XMLHttpRequest();
 _xmlhttp.open("GET","questions.xml",false);
@@ -15,18 +16,10 @@ _xmlhttp.send();
 _xmlDoc=_xmlhttp.responseXML;
 var question_group_list = [];
 var question_list=_xmlDoc.getElementsByTagName("Question");
-
-/* 
- * populate lang_acronym
- * lang_acronym = {
-	 * en : ['English', 'america.jpg']
-	 * fr : ['French', 'french.gif']
-	 * }
- */
 var lang_acronym = {};
 var lang_list = _xmlDoc.getElementsByTagName("Language");
-for (i=0; i<lang_list.length; i++)
-{
+
+for (i=0; i<lang_list.length; i++){ //recommend placing this into makeGroups()
 	var tuple = [
 		lang_list[i].getElementsByTagName('full')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, ''),
 		lang_list[i].getElementsByTagName('image')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '')
@@ -46,12 +39,13 @@ for (i=0; i<lang_list.length; i++)
  */
 function makeGroups()
 {
+	console.log('makeGroups called');//Delete Me
 	for( j=0; j<question_list.length; j++ ) {
 		var qType = (question_list[j].getElementsByTagName("type"))[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '');
 		var makeNew = true;
 		for( k=0; k<question_group_list.length; k++ ){
 			if( question_group_list[k][0][0] === qType ) {
-				question_group_list[k].push( question_list[j] ) ;
+				question_group_list[k].push( [question_list[j],[] ] ) ;
 				makeNew = false;
 			}
 		}
@@ -72,6 +66,7 @@ function makeGroups()
  */ 
 function populateSelects()
 {
+	console.log('populateSelects called');//Delete Me
 	var url = $(location).attr('href');
 	var lang = url.split("=")[1];
 		
@@ -129,8 +124,8 @@ function printQuestions()
 		{
 			var $question_div = $('<div id="question-div" class="question-div" />');
 			$( question_group_list[h][0][2] ).append($question_div);
-			var $anchor = $('<a href="media/video/'+ (question_group_list[h][i].getElementsByTagName(patient_lang))[0].getElementsByTagName('video')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '') + '" id="anchor" class ="' + patient_lang + '" caption="' + (question_group_list[h][i].getElementsByTagName(patient_lang))[0].childNodes[0].nodeValue + '" >');
-			//$question_div.append('<div class="question-buttons"><div>First Opt</div><br /><div>Second Opt</div><br /><div>Third Opt</button></div>'); // - DELETE ME
+			var $anchor = $('<a href="media/video/'+ (question_group_list[h][i][0].getElementsByTagName(patient_lang))[0].getElementsByTagName('video')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '') + '" id="anchor" class ="' + patient_lang + '" caption="' + (question_group_list[h][i][0].getElementsByTagName(patient_lang))[0].childNodes[0].nodeValue + '" >');
+			$question_div.append( assignButtons( question_group_list[h][i][0] ) ); // - DELETE ME
 			$question_div.append($anchor);
 			var $question = $('<div class="question">');
 			$anchor.append($question);
@@ -138,8 +133,8 @@ function printQuestions()
 			$question.append($top);
 			var $bottom = $('<div class="bottom">');
 			$question.append($bottom);
-			$top.append( (question_group_list[h][i].getElementsByTagName(patient_lang))[0].childNodes[0].nodeValue );
-			$bottom.append( (question_group_list[h][i].getElementsByTagName(provider_lang))[0].childNodes[0].nodeValue );
+			$top.append( (question_group_list[h][i][0].getElementsByTagName(patient_lang))[0].childNodes[0].nodeValue );
+			$bottom.append( (question_group_list[h][i][0].getElementsByTagName(provider_lang))[0].childNodes[0].nodeValue );
 		}
 		makeItSlide(question_group_list[h][0]);
 	}
@@ -196,9 +191,27 @@ function refreshQuestions()
  *
  *	Closes all of the question groups
  */
-
 function collapseQuestions(){
 	for (h=0; h<question_group_list.length; h++) //For each group...
 	{
 		question_group_list[h][0][2].css("display","none");
-	}}
+	}
+}
+
+/*
+ * assignButtons
+ *
+ * @param question
+ *
+ * Def: Creates response buttons and the event handler thereof
+ */
+function assignButtons(question)
+{
+	/*console.log( '>'+question[1][0] );
+	console.log( '>'+question[1][1] );
+	console.log( '>'+question[1][2] );
+	console.log( '>'+question[1][3] );
+	var buttonDiv = '<div class="question-buttons">' + question[1][1] + question[1][2] + question[1][3] + '</div>';
+	*/
+	return '<div class="question-buttons"></div>';
+}
