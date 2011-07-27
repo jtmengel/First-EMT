@@ -1,3 +1,39 @@
+<First_EMT>
+<Language_list>
+	<Language>
+		<abbr>
+			en
+		</abbr>
+		<full>
+			English
+		</full>
+		<image>
+			america.jpg
+		</image>
+	</Language>
+	<Language>
+		<abbr>
+			fr
+		</abbr>
+		<full>
+			French
+		</full>
+		<image>
+			french.gif
+		</image>
+	</Language>
+	<Language>
+		<abbr>
+			es
+		</abbr>
+		<full>
+			Spanish
+		</full>
+		<image>
+			spain.gif
+		</image>
+	</Language>
+</Language_list>
 <Question_list>
 	<Question>
 		<type>
@@ -552,3 +588,4 @@
 		</fr>
 	</Question>
 </Question_list>
+</First_EMT>

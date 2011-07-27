@@ -15,10 +15,18 @@ _xmlhttp.send();
 _xmlDoc=_xmlhttp.responseXML;
 var question_group_list = [];
 var question_list=_xmlDoc.getElementsByTagName("Question");
-var lang_acronym = {
-	 'en': 'English',
-	 'es': 'Spanish',
-	 'fr': 'French' };
+
+/* 
+ * populate lang_acronym & flag_array
+ */
+var lang_acronym = {};
+var lang_list = _xmlDoc.getElementsByTagName("Language");
+var flag_array = new Array();
+for (i=0; i<lang_list.length; i++)
+{
+	lang_acronym[lang_list[i].getElementsByTagName('abbr')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '')] = lang_list[i].getElementsByTagName('full')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '');
+	flag_array.push(lang_list[i].getElementsByTagName('image')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, ''));
+}
 
 /* 
  *  makeGroups() will sort the questions list into groups
@@ -66,7 +74,6 @@ function populateSelects()
 	
 	$.each(lang_acronym, function(key, value) 
 	{
-		console.log(key + " " + value + " " + lang);
 		if (key === lang){
 			lang_patient.append('<option selected="selected" value="' + key + 
 			'">' + value + '</option>'); 
@@ -116,7 +123,6 @@ function printQuestions()
 		{
 			var $question_div = $('<div id="question-div" class="question-div" />');
 			$( question_group_list[h][0][2] ).append($question_div);
-			console.log((question_group_list[h][i].getElementsByTagName(patient_lang))[0].childNodes[0].nodeValue);
 			var $anchor = $('<a href="media/video/'+ (question_group_list[h][i].getElementsByTagName(patient_lang))[0].getElementsByTagName('video')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '') + '" id="anchor" class ="' + patient_lang + '" caption="' + (question_group_list[h][i].getElementsByTagName(patient_lang))[0].childNodes[0].nodeValue + '" >');
 			//$question_div.append('<div class="question-buttons"><div>First Opt</div><br /><div>Second Opt</div><br /><div>Third Opt</button></div>'); // - DELETE ME
 			$question_div.append($anchor);
@@ -147,6 +153,14 @@ function makeItSlide(passedArray)
 		passedArray[2].slideToggle('fast');
 	} );
 }
+
+/*
+ * addFlags
+ */
+function addFlags()
+{
+	var langs
+}	
 	
 /*
  *	refreshQuestions
