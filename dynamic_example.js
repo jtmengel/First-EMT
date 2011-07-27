@@ -17,15 +17,21 @@ var question_group_list = [];
 var question_list=_xmlDoc.getElementsByTagName("Question");
 
 /* 
- * populate lang_acronym & flag_array
+ * populate lang_acronym
+ * lang_acronym = {
+	 * en : ['English', 'america.jpg']
+	 * fr : ['French', 'french.gif']
+	 * }
  */
 var lang_acronym = {};
 var lang_list = _xmlDoc.getElementsByTagName("Language");
-var flag_array = new Array();
 for (i=0; i<lang_list.length; i++)
 {
-	lang_acronym[lang_list[i].getElementsByTagName('abbr')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '')] = lang_list[i].getElementsByTagName('full')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '');
-	flag_array.push(lang_list[i].getElementsByTagName('image')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, ''));
+	var tuple = [
+		lang_list[i].getElementsByTagName('full')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, ''),
+		lang_list[i].getElementsByTagName('image')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '')
+		]
+	lang_acronym[lang_list[i].getElementsByTagName('abbr')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '')] = tuple;
 }
 
 /* 
@@ -76,17 +82,17 @@ function populateSelects()
 	{
 		if (key === lang){
 			lang_patient.append('<option selected="selected" value="' + key + 
-			'">' + value + '</option>'); 
+			'">' + value[0] + '</option>'); 
 		} else {
 			lang_patient.append('<option value="' + key + 
-			'">' + value + '</option>'); 
+			'">' + value[0] + '</option>'); 
 		}
 		if (key === 'en'){
 			lang_provider.append('<option selected="selected" value="' + key + 
-			'">' + value + '</option>'); 
+			'">' + value[0] + '</option>'); 
 		} else {
 			lang_provider.append('<option value="' + key + 
-			'">' + value + '</option>'); 
+			'">' + value[0] + '</option>'); 
 		}		
 	});
 	$('#lang_list').prepend(lang_patient);
@@ -159,7 +165,21 @@ function makeItSlide(passedArray)
  */
 function addFlags()
 {
-	var langs
+	$.each(lang_acronym, function(key, value) 
+	{
+		var lang_div = $('<div class="lang">');
+		$('#wrapper').append(lang_div);
+		var lang_anchor = $('<a href="./Questions.html?lang=' + key +'">');
+		$(lang_div).append(lang_anchor);
+		var lang_img = $('<img src="media/images/' + value[1] + '" height="113" width="200" alt="' + value[0] + '" />');
+		lang_anchor.append(lang_img);
+		/*<div class="lang">
+			<a href="./Questions.html?lang=en">
+			* <img src='media/images/america.jpg' height="113" width="200" alt='American lang' />
+			* </a>
+
+		</div>*/		
+	});
 }	
 	
 /*
