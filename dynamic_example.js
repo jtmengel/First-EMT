@@ -199,6 +199,26 @@ function collapseQuestions(){
 }
 
 /*
+ * printMissed
+ */
+function printMissed()
+{
+	var print_div = $('<div />');
+	
+	for (h=0; h<question_group_list.length;h++)
+	{
+		for (i=1; i<question_group_list[h].length; i++)
+		{
+			if (question_group_list[h][i][1][0])
+			{
+				$(print_div).append((question_group_list[h][i][0].getElementsByTagName('en'))[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '') + "<br />");
+			}
+		}
+	}
+	$(print_div).printElement();
+}
+
+/*
  * assignButtons
  *
  * @param question

@@ -3,6 +3,7 @@
 <html>  
 <script type="text/javascript" src="dynamic_example.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.printElement.js"></script>
 <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
     
 <head>  
@@ -36,6 +37,7 @@
 	<div id="wrapper">
 		
 		<script>
+			$('#options').click(printMissed);
 			populateSelects();
 			$("#lang_provider").change(refreshQuestions);
 			$("#lang_patient").change(refreshQuestions);
