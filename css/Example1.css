@@ -117,6 +117,30 @@ a {
 	clear:none;
 }
 
+span.response{
+	border-radius: 4px 4px 4px 4px;
+	opacity:0.4;
+}
+
+span.response:hover{
+	opacity:1;
+}
+
+.response#yes{
+	color:darkgreen;
+	border: 2px solid green;
+}
+
+.response#maybe{
+	color:orange;
+	border: 2px solid orange;
+}
+
+.response#no{
+	color:red;
+	border: 2px solid red;
+}
+
 h3{
 	cursor: pointer; cursor: hand;
 	background-color: #C6C6FF;
@@ -129,5 +153,4 @@ h3{
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	user-select: none;
-
 }
