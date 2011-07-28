@@ -148,10 +148,10 @@ function printQuestions()
 /*
  * makeItSlide
  */
-function makeItSlide(passedArray)
+function makeItSlide(qgList)
 {
-	passedArray[1].find('h3').click( function(){
-		passedArray[2].slideToggle('fast');
+	qgList[1].find('h3').click( function(){
+		qgList[2].slideToggle('fast');
 	} );
 }
 
@@ -207,15 +207,24 @@ function collapseQuestions(){
  */
 function assignButtons(question)
 {
-	console.log('What the flying fucking shit is this cunt bag of a fucking cunt slick??? ' + question[1]);
-	if( question[1][0]===undefined ){
-		console.log('undefined');
-	}
-	/*console.log( '>'+question[1][0] );
-	console.log( '>'+question[1][1] );
-	console.log( '>'+question[1][2] );
-	console.log( '>'+question[1][3] );
-	var buttonDiv = '<div class="question-buttons">' + question[1][1] + question[1][2] + question[1][3] + '</div>';
-	*/
-	return '<div class="question-buttons"></div>';
+	if( question[1][0] === undefined ){
+		question[1][0]  =  false;
+		question[1][1]  =  $('<div class="button" id="flag">!</div>');
+		}
+	
+//	qgList[1].find('h3').click( function(){
+//		qgList[2].slideToggle('fast');
+//	} );
+//}
+	
+	question[1][1].click( function(){
+		console.log('Click read - ' + (question[0].getElementsByTagName('en'))[0].childNodes[0].nodeValue);
+		
+		question[1][0] = !question[1][0];
+		if(!question[1][0] ) { question[1][1].css('id','flag'); }
+		if( question[1][0] ) { question[1][1].css('id','flag solid'); }
+		console.log('>'+question[1][0]);
+	});
+	
+	return $(question[1][1]);
 }

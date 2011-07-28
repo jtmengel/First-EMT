@@ -117,27 +117,20 @@ a {
 	clear:none;
 }
 
-span.response{
+div.button{
 	border-radius: 4px 4px 4px 4px;
-	opacity:0.4;
+	opacity:0.2;
+	width:64px;
+	height:64px;
+	float:right;
 }
 
-span.response:hover{
+.button#solid{
 	opacity:1;
 }
 
-.response#yes{
-	color:darkgreen;
-	border: 2px solid green;
-}
-
-.response#maybe{
-	color:orange;
-	border: 2px solid orange;
-}
-
-.response#no{
-	color:red;
+.button#flag{
+	background:salmon;
 	border: 2px solid red;
 }
 
