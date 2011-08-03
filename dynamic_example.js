@@ -125,7 +125,14 @@ function printQuestions()
 			var $question_div = $('<div id="question-div" class="question-div" />');
 			$( question_group_list[h][0][2] ).append($question_div);
 			var $anchor = $('<a href="media/video/'+ (question_group_list[h][i][0].getElementsByTagName(patient_lang))[0].getElementsByTagName('video')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '') + '" id="anchor" class ="' + patient_lang + '" caption="' + (question_group_list[h][i][0].getElementsByTagName(patient_lang))[0].childNodes[0].nodeValue + '" >');
-			$question_div.append( assignButtons( question_group_list[h][i] ) ); // - DELETE ME
+
+	        if( question_group_list[h][i][1][0] === undefined ){
+		        question_group_list[h][i][1][0]  =  false;
+        		question_group_list[h][i][1][1]  =  $('<div class="button neutral">!</div>');
+    		}
+			$question_div.append(question_group_list[h][i][1][1] );
+			assignButtons( question_group_list[h][i][1] );
+
 			$question_div.append($anchor);
 			var $question = $('<div class="question">');
 			$anchor.append($question);
@@ -147,6 +154,7 @@ function printQuestions()
 
 /*
  * makeItSlide
+ * @param qgList Question Group List - passes in the question group information
  */
 function makeItSlide(qgList)
 {
@@ -168,12 +176,6 @@ function addFlags()
 		$(lang_div).append(lang_anchor);
 		var lang_img = $('<img src="media/images/' + value[1] + '" height="113" width="200" alt="' + value[0] + '" />');
 		lang_anchor.append(lang_img);
-		/*<div class="lang">
-			<a href="./Questions.html?lang=en">
-			* <img src='media/images/america.jpg' height="113" width="200" alt='American lang' />
-			* </a>
-
-		</div>*/		
 	});
 }	
 	
@@ -227,24 +229,17 @@ function printMissed()
  */
 function assignButtons(question)
 {
-	if( question[1][0] === undefined ){
-		question[1][0]  =  false;
-		question[1][1]  =  $('<div class="button" id="flag">!</div>');
-		}
-	
-//	qgList[1].find('h3').click( function(){
-//		qgList[2].slideToggle('fast');
-//	} );
-//}
-	
-	question[1][1].click( function(){
-		console.log('Click read - ' + (question[0].getElementsByTagName('en'))[0].childNodes[0].nodeValue);
+	question[1].click( function(){
 		
-		question[1][0] = !question[1][0];
-		if(!question[1][0] ) { question[1][1].css('id','flag'); }
-		if( question[1][0] ) { question[1][1].css('id','flag solid'); }
-		console.log('>'+question[1][0]);
+        question[0] = !question[0];
+        
+		if(!question[0] ) {
+            $(this).attr('class','button flagged'); 
+		    console.log('>'+question[0]);
+        }
+		else{
+            $(this).attr('class','button neutral');
+		    console.log('>'+question[0]);
+        }
 	});
-	
-	return $(question[1][1]);
 }

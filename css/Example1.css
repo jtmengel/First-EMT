@@ -80,7 +80,6 @@ nav {
 a {
 	text-decoration: none;
 	color: #000000;
-
 }	
 	
 #back, #options, #home, #next {
@@ -118,20 +117,21 @@ a {
 }
 
 div.button{
-	border-radius: 4px 4px 4px 4px;
-	opacity:0.2;
+	border-radius: 16px 16px 16px 16px;
 	width:64px;
 	height:64px;
 	float:right;
+    margin:5px;
 }
 
-.button#solid{
-	opacity:1;
+.flagged{
+	background:red;
+    border:2px solid salmon;
 }
 
-.button#flag{
-	background:salmon;
-	border: 2px solid red;
+.neutral{
+	background:teal;
+	border: 2px solid blue;
 }
 
 h3{
