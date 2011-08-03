@@ -125,6 +125,7 @@ div.button{
 	height:64px;
 	float:right;
     margin:5px;
+	cursor: pointer; cursor: hand;
 }
 
 .flagged{

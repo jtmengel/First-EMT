@@ -237,7 +237,7 @@ function assignButtons(question)
 		
         question[0] = !question[0];
         
-		if(!question[0] ) {
+		if( question[0] ) {
             $(this).attr('class','button flagged'); 
 		    console.log('>'+question[0]);
         }
