@@ -1,6 +1,6 @@
 /* dynamic_example.js
  * Taylor Rose (tjr1351 [at] rit.edu)
- * Scott JT Mengel (slm8604 [at] gmail.com]
+ * Scott JT Mengel (slm8604 [at] rit.edu]
  * Controller for question page. Dynamically loads questions from XML
  * 
  * @constructor _xmlhttp
