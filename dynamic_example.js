@@ -205,7 +205,7 @@ function collapseQuestions(){
  */
 function printMissed()
 {
-	var print_div = $('<div />');
+	var print_div = $('<div id="print_div" />');
 	
 	for (h=0; h<question_group_list.length;h++)
 	{
@@ -213,11 +213,15 @@ function printMissed()
 		{
 			if (question_group_list[h][i][1][0])
 			{
-				$(print_div).append((question_group_list[h][i][0].getElementsByTagName('en'))[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '') + "<br />");
+				$(print_div).append("<i>" + (question_group_list[h][i][0].getElementsByTagName(provider_lang))[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '') + "</i><br />");
+				$(print_div).append((question_group_list[h][i][0].getElementsByTagName(patient_lang))[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '') + "<br />");
+				
 			}
 		}
 	}
-	$(print_div).printElement();
+	$('body').append(print_div);
+	window.print();
+	$(print_div).remove();
 }
 
 /*

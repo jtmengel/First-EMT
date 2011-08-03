@@ -1,0 +1,12 @@
+body{
+	background-color: #FFFFFF;
+}
+#lang_list{
+	display: none;
+}
+nav{
+	display: none;
+}
+#print_div{
+	display: block;
+}

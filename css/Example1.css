@@ -27,6 +27,9 @@ div.lang {
 	display: inline-block;
 	padding: 5px;
 }
+#print_div{
+	display: none;
+}
 
 .flipH {
 	-moz-transform: scaleX(-1);
