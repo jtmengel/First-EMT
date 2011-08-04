@@ -9,7 +9,7 @@ body{
 	}
 .top {
 	font-size: xx-large;
-}	
+}
 .bottom {
 	font-size: small;
 }
@@ -123,7 +123,8 @@ div.button{
 	border-radius: 16px 16px 16px 16px;
 	width:64px;
 	height:64px;
-	float:right;
+    float:right;
+	clear:none;
     margin:5px;
 	cursor: pointer; cursor: hand;
 }
