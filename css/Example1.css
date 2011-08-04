@@ -72,12 +72,13 @@ nav {
 	border-width: 2px;
 	background-color: #c6c6ff;
 }
-.question {
+.question{
 	display: table-cell;
-	padding: 10px;
+	padding: 10px 0 10px 74px;
 	font-size: xx-large;
 	vertical-align: middle;
-	width: inherit 80%;
+	width: 80%;
+    float:left;
 }
 	
 a {

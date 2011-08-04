@@ -126,12 +126,12 @@ function printQuestions()
 			$( question_group_list[h][0][2] ).append($question_div);
 			var $anchor = $('<a href="media/video/'+ (question_group_list[h][i][0].getElementsByTagName(patient_lang))[0].getElementsByTagName('video')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '') + '" id="anchor" class ="' + patient_lang + '" caption="' + (question_group_list[h][i][0].getElementsByTagName(patient_lang))[0].childNodes[0].nodeValue + '" >');
 
-	        if( question_group_list[h][i][1][0] === undefined ){
-		        question_group_list[h][i][1][0]  =  false;
-        		question_group_list[h][i][1][1]  =  $('<div class="button neutral">!</div>');
-    		}
-			$question_div.append(question_group_list[h][i][1][1] );
-			assignButtons( question_group_list[h][i][1] );
+//	        if( question_group_list[h][i][1][0] === undefined ){
+//		        question_group_list[h][i][1][0]  =  false;
+//        		question_group_list[h][i][1][1]  =  $('<div class="button neutral">!</div>');
+//    		}
+//			$question_div.append(question_group_list[h][i][1][1] );
+//			assignButtons( question_group_list[h][i][1] );
 
 			$question_div.append($anchor);
 			var $question = $('<div class="question">');
@@ -142,6 +142,13 @@ function printQuestions()
 			$question.append($bottom);
 			$top.append( (question_group_list[h][i][0].getElementsByTagName(patient_lang))[0].childNodes[0].nodeValue );
 			$bottom.append( (question_group_list[h][i][0].getElementsByTagName(provider_lang))[0].childNodes[0].nodeValue );
+
+	        if( question_group_list[h][i][1][0] === undefined ){
+		        question_group_list[h][i][1][0]  =  false;
+        		question_group_list[h][i][1][1]  =  $('<div class="button neutral">!</div>');
+    		}
+			$question_div.append(question_group_list[h][i][1][1] );
+			assignButtons( question_group_list[h][i][1] );
 		}
 		makeItSlide(question_group_list[h][0]);
 	}
