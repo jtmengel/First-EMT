@@ -1,1 +1,0 @@
-accept file name ex. "movie.ogg" if it fails try all other file extensions. Tell user to input their primary video format and to include backup formats with the same name and different file extensions. 
