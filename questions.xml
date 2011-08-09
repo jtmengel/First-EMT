@@ -33,6 +33,17 @@
 			spain.gif
 		</image>
 	</Language>
+	<Language>
+		<abbr>
+			ne
+		</abbr>
+		<full>
+			Nepali
+		</full>
+		<image>
+			nepal.gif
+		</image>
+	</Language>
 </Language_list>
 <Question_list>
 	<Question>
@@ -57,6 +68,12 @@
 				test
 			</video>
 		</fr>
+		<ne>
+		        म तपाँईको जन्म मिति जाँच्न सक्छु?
+		    <video>
+		        ranga1
+		    </video>
+		</ne>
 	</Question>
 	<Question>
 		<type>
@@ -80,6 +97,12 @@
 				test
 			</video>
 		</fr>
+		<ne>
+		        म तपाँईको ठेगाना जाँच्न सक्छु? तपाँईको टेलिफोन नम्बर​?
+		    <video>
+		        ranga2
+		    </video>
+		</ne>
 	</Question>
 	<Question>
 		<type>
@@ -103,6 +126,12 @@
 				test
 			</video>
 		</fr>
+		<ne>
+		        म तपाँईको इन्सुरेन्स र फोटो भ​एको परिचयपत्र पाँउन सक्छु?
+		    <video>
+		        ranga3
+		    </video>
+		</ne>
 	</Question>
 	<Question>
 		<type>
@@ -126,6 +155,12 @@
 				test
 			</video>
 		</fr>
+		<ne>
+		        तपाँईको ईमर्जेन्सिमा सम्पर्ग गर्ने ब्याक्तिको नाम भन्न सक्नु हुन्छ​? वहाँको टेलिफोननम्बर​? म तपाँईको इन्सुरेन्स र फोटो भ​एको परिचयपत्र पाँउन सक्छु?
+		    <video>
+		        ranga4
+		    </video>
+		</ne>
 	</Question>
 	<Question>
 		<type>
@@ -149,6 +184,12 @@
 				test
 			</video>
 		</fr>
+		<ne>
+		        वहाँसित तपाँईको के सम्बन्ध छ​?
+		    <video>
+		        ranga5
+		    </video>
+		</ne>
 	</Question>
 	<Question>
 		<type>
@@ -172,6 +213,12 @@
 				test
 			</video>
 		</fr>
+		<ne>
+		        तपाँईको ब्याक्तिगत जानकारिमा अरु केहि अदल बदल​ गर्नु छ​?
+		    <video>
+		        ranga6
+		    </video>
+		</ne>
 	</Question>
 	<Question>
 		<type>
@@ -195,6 +242,12 @@
 				test
 			</video>
 		</fr>
+		<ne>
+		        तपाँई यहि पर्खदै गर्नुहोला, म तपाँईको ईन्सुरेन्स जाँच गर्नेछु!
+		    <video>
+		        ranga7
+		    </video>
+		</ne>
 	</Question>
 	<Question>
 		<type>
@@ -218,6 +271,12 @@
 				test
 			</video>
 		</fr>
+		<ne>
+		        यो कार्डमा तपाँईको प्राइमेरि केयर डाक्टर गल्ति लेखिएको हुनाले ईन्सुरेन्स सित तपाँईको डाक्टर फेर्न लाई तपाँईले हामिलाई यो फारममा सहि गरिदिनु पर्ने हुन्छ​!
+		    <video>
+		        ranga8
+		    </video>
+		</ne>
 	</Question>
 	<Question>
 		<type>
@@ -241,6 +300,12 @@
 				test
 			</video>
 		</fr>
+		<ne>
+	                तपाँई कुर्सिमा बस्दैगर्नु होला नर्सले तपाँईलाई केहि मिनेटमै बोलाउनु हुने छ!
+		    <video>
+		        ranga9
+		    </video>
+		</ne>
 	</Question>
 	<Question>
 		<type>
@@ -264,6 +329,12 @@
 				test
 			</video>
 		</fr>
+		<ne>
+                        म तपाँईलाई यो जनाउन चहान्छुकि तपाँइको डाक्टर एक घण्टा पछि भैरहेकोले यो समयमा तपाँइले केहि कफि पिउन सक्नुहुने छ​!
+		    <video>
+		        ranga10
+		    </video>
+		</ne>
 	</Question>
 	<Question>
 		<type>
@@ -286,7 +357,13 @@
 			<video>
 				test
 			</video>
-		</fr>
+		</fr>		
+		<ne>
+                        असुबिधा भ​एकोमा माफ गर्नु होला, म तपाँईलाई खनाको एउटा भाउचर उपहार दिन सक्छु!
+		    <video>
+		        ranga11
+		    </video>
+		</ne>
 	</Question>
 	<Question>
 		<type>
@@ -310,6 +387,12 @@
 				test
 			</video>
 		</fr>
+		<ne>
+                        तपाँई केहि खान अथवा​​ पिउन चहानु हुन्छ​?
+		    <video>
+		        ranga12
+		    </video>
+		</ne>
 	</Question>
 	<Question>
 		<type>
@@ -333,6 +416,12 @@
 				test
 			</video>
 		</fr>
+		<ne>
+                        तपाँई यँहा के कारणले आउनु भयो त​?
+		    <video>
+		        ranga13
+		    </video>
+		</ne>
 	</Question>
 	<Question>
 		<type>
@@ -356,6 +445,12 @@
 				test
 			</video>
 		</fr>
+		<ne>
+                        तपाँईलाई यो समस्या भ​एको कति लामो भयो?
+		    <video>
+		        ranga14
+		    </video>
+		</ne>
 	</Question>
 	<Question>
 		<type>
@@ -379,6 +474,12 @@
 				test
 			</video>
 		</fr>
+		<ne>
+                        तपाँईलाई दुख्छ​?
+		    <video>
+		        ranga15
+		    </video>
+		</ne>
 	</Question>
 	<Question>
 		<type>
@@ -402,6 +503,12 @@
 				test
 			</video>
 		</fr>
+		<ne>
+                        दुखाईको लागि कुनै औषधि खाँदै हुनुहुन्छ​?
+		    <video>
+		        ranga16
+		    </video>
+		</ne>
 	</Question>
 	<Question>
 		<type>
@@ -425,6 +532,12 @@
 				test
 			</video>
 		</fr>
+		<ne>
+                        यो समस्या तपाँईको सरिरको अरु कुनै भागहरुमा पनि भैरहेको छ?
+		    <video>
+		        ranga17
+		    </video>
+		</ne>
 	</Question>
 	<Question>
 		<type>
@@ -448,6 +561,12 @@
 				test
 			</video>
 		</fr>
+		<ne>
+                        घरमा अरु कोहि बिरामि छ​?
+		    <video>
+		        ranga18
+		    </video>
+		</ne>
 	</Question>
 	<Question>
 		<type>
@@ -471,6 +590,12 @@
 				test
 			</video>
 		</fr>
+		<ne>
+                        तपाँइलाई यो समस्या अघि कैलेहि भ​एको थियो?
+		    <video>
+		        ranga19
+		    </video>
+		</ne>
 	</Question>
 	<Question>
 		<type>
@@ -494,6 +619,12 @@
 				test
 			</video>
 		</fr>
+		<ne>
+                        म तपाँइको रक्तचाप र धड्कन जाँच गर्न​ गैरहेछु!
+		    <video>
+		        ranga20
+		    </video>
+		</ne>
 	</Question>
 	<Question>
 		<type>
@@ -517,6 +648,12 @@
 				test
 			</video>
 		</fr>
+		<ne>
+                        म तपाँइको वजन जाँच गर्न चहान्छु!
+		    <video>
+		        ranga21
+		    </video>
+		</ne>
 	</Question>
 		<Question>
 		<type>
@@ -540,6 +677,12 @@
 				test
 			</video>
 		</fr>
+		<ne>
+                        तपाँइ कुन औषधि पसल प्रयोग गर्नु हुन्छ​? तपाँइलाई औषधि पसल को फोन नम्बर थाहा छ​?
+		    <video>
+		        ranga22
+		    </video>
+		</ne>
 	</Question>
 	<Question>
 		<type>
@@ -563,6 +706,12 @@
 				test
 			</video>
 		</fr>
+		<ne>
+                        तपाँइको डाक्टरले तपाँइलाई अब .......................... मा भेट दिनुहुने छ​!
+		    <video>
+		        ranga23
+		    </video>
+		</ne>
 	</Question>
 	<Question>
 		<type>
@@ -586,6 +735,12 @@
 				test
 			</video>
 		</fr>
+		<ne>
+                        तपाँइको डाक्टर ऐले अरु कोहि सङ हुनुहुन्छ, अब आउने पालो तपाँइको हुनेछ​!
+		    <video>
+		        ranga24
+		    </video>
+		</ne>
 	</Question>
 </Question_list>
 </First_EMT>
