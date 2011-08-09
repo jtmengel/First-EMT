@@ -186,7 +186,7 @@
 			}
 			$('#source1').attr('src',settings.imageArray[settings.activeImage][0] + ".mp4");
 			$('#source2').attr('src',settings.imageArray[settings.activeImage][0] + ".webm");
-			$('#source2').attr('src',settings.imageArray[settings.activeImage][0] + ".ogv");
+			$('#source3').attr('src',settings.imageArray[settings.activeImage][0] + ".ogv");
 			$('#lightbox-image').show();
 			_resize_container_image_box(640, 400);
 		};
