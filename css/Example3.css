@@ -27,7 +27,7 @@ div.lang {
     filter: fliph; /*IE*/
 	}
 
-nav {
+#nav{
 	align: center;
 	background-image: -webkit-gradient(
     linear,
@@ -74,18 +74,16 @@ a {
 	color: #000000;
 
 }	
-	
+// Nav Bar Stylings
 #back, #options, #home, #next {
 	position: fixed;
-	bottom: 3;
+	bottom: 3px;
 	opacity: 0.5;
 	}
 	
 #back {
 	left: 0px;
 	}
-	
-
 	
 #options {
 	left: 50%;

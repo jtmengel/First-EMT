@@ -1,34 +1,40 @@
 <!doctype html5>
 <html>
-	<script type="text/javascript" src="js/dynamic_example.js"></script>
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<head>
+<head>
 
-	<link rel="stylesheet" href="css/Example1.css"/>  
-	<link rel="stylesheet" href="css/videobox.css" type="text/css" media="screen" />
+	<title>Language Select</title>
+	
+    <script type="text/javascript" src="js/dynamic_example.js"></script>
+    <script type="text/javascript" src="js/jquery-1.6.4.js"></script>
+
+    <link rel="stylesheet" href="css/Form1.css" type="text/css" />
+    <link rel="stylesheet" href="css/videobox.css" type="text/css" />
+
 </head>
 <body>  
-  <nav>
-	<div id="back">  
-      <a href="#"><img src="media/images/arrowL.png" height=75px width=75px /></a>
-    </div>
-    <div id="options">
-      <a href="#"><img src="media/images/settings.png" height=75px width=75px /></a>
+
+	<nav>
+		<div id="back">  
+			<a href="#"><img src="media/images/arrowL.png" height=75px width=75px /></a>
+		</div>
+		<div id="options">
+			<a href="#"><img src="media/images/settings.png" height=75px width=75px /></a>
+		</div>
+		<div id="home">
+			<a href="#"><img src="media/images/home.png" height=75px width=75px /></a>
+		</div>
+		<div id="next" class="flipH">
+			<a href="#"><img src="media/images/arrowL.png" height=75px width=75px /></a>
+		</div>
+	</nav>
+	
+	<div id="lang_list">
+		<div id="wrapper" />
 	</div>
-	<div id="home">
-      <a href="#"><img src="media/images/home.png" height=75px width=75px /></a>
-	</div>
-    <div id="next" class="flipH">
-      <a href="Example3.html"><img src="media/images/arrowL.png" height=75px width=75px /></a>
-    </div>
-  </nav>
 
-  <section id="lang_list">
-	<div id="wrapper" />
-    </section>
+	<script>
+		addFlags();
+	</script>
 
-<script>
-	addFlags();
-</script>
-
-</body></html>
+</body>
+</html>

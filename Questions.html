@@ -1,56 +1,58 @@
-<!doctype html5> 
-
-<html>  
-<script type="text/javascript" src="js/dynamic_example.js"></script>
-<script type="text/javascript" src="js/jquery.js"></script>
-
-<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
-    
-<head>  
-	<meta charset="utf-8"/>  
-	<title></title>  
-  
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>  
-	<link rel="stylesheet" href="css/Example1.css" media="screen" />  
-	<link rel="stylesheet" href="css/print.css" media="print" />  
-	<link rel="stylesheet" href="css/jquery.lightbox-0.5.css" media="screen" />
-</head>  
-   
-<body>  
-  
-  <nav>
-	<div id="back">  
-      <a href="./First_EMT.html"><img src="media/images/arrowL.png" height=75px width=75px /></a>
-    </div>
-    <div id="options">
-      <a href="#"><img src="media/images/settings.png" height=75px width=75px /></a>
-	</div>
-	<div id="home">
-      <a href="./First_EMT.html"><img src="media/images/home.png" height=75px width=75px /></a>
-	</div>
-    <div id="next" class="flipH">
-      <a href="#"><img src="media/images/arrowL.png" height=75px width=75px /></a>
-    </div>
-  </nav>
-
-  <section id="lang_list">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
 	
-	<div id="wrapper">
-		
-		<script>
-			$('#options').click(printMissed);
-			populateSelects();
-			$("#lang_provider").change(refreshQuestions);
-			$("#lang_patient").change(refreshQuestions);
-			makeGroups();
-			printQuestions();
-			collapseQuestions();
-		</script>
-			
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>  
+    <title>Questions</title>
+	
+	<script type="text/javascript" src="js/jquery-1.6.4.js"></script>
+	<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+    <script type="text/javascript" src="js/dynamic_example.js"></script>
+
+    <link rel="stylesheet" href="css/Form1.css" type="text/css" />
+    <link rel="stylesheet" href="css/print.css" type="text/css" />  
+    <link rel="stylesheet" href="css/jquery.lightbox-0.5.css" media="screen" />
+
+</head>
+<body>
+
+	<!-- Create the persistant footer bar for the pages -->
+	
+	<div id="nav">
+		<div id="back">  
+			<a href="./First_EMT.html"><img src="media/images/arrowL.png" height=75px width=75px /></a>
+		</div>
+		<div id="options">
+			<a href="#"><img src="media/images/settings.png" height=75px width=75px /></a>
+		</div>
+		<div id="home">
+			<a href="./First_EMT.html"><img src="media/images/home.png" height=75px width=75px /></a>
+		</div>
+		<div id="next" class="flipH">
+			<a href="#"><img src="media/images/arrowL.png" height=75px width=75px /></a>
+		</div>
 	</div>
-  </section>
-  
-  <footer>  
-  </footer>
-</body>  
+	
+	<!-- End: Footer bar -->
+	<!-- Create the main body area -->
+	
+	<div id="content">
+		<div id="wrapper" />
+	</div>
+	
+	<!-- End: Main area -->
+	<!-- Call scripts' objects to  -->
+	
+	<script>
+		$('#options').click(printMissed);
+		populateSelects();
+		$("#lang_provider").change(refreshQuestions);
+		$("#lang_patient").change(refreshQuestions);
+		makeGroups();
+		printQuestions();
+		collapseQuestions();	<!-- Accordian animations -->
+	</script>
+	
+</body>
 </html>
