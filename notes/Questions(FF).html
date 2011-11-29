@@ -1,0 +1,56 @@
+<!doctype html5> 
+
+<html>  
+<script type="text/javascript" src="js/dynamic_example.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+    
+<head>  
+	<meta charset="utf-8"/>  
+	<title></title>  
+  
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>  
+	<link rel="stylesheet" href="css/Example1.css" media="screen" />  
+	<link rel="stylesheet" href="css/print.css" media="print" />  
+	<link rel="stylesheet" href="css/jquery.lightbox-0.5.css" media="screen" />
+</head>  
+   
+<body>  
+  
+  <nav>
+	<div id="back">  
+      <a href="./First_EMT.html"><img src="media/images/arrowL.png" height=75px width=75px /></a>
+    </div>
+    <div id="options">
+      <a href="#"><img src="media/images/settings.png" height=75px width=75px /></a>
+	</div>
+	<div id="home">
+      <a href="./First_EMT.html"><img src="media/images/home.png" height=75px width=75px /></a>
+	</div>
+    <div id="next" class="flipH">
+      <a href="#"><img src="media/images/arrowL.png" height=75px width=75px /></a>
+    </div>
+  </nav>
+
+  <section id="lang_list">
+	
+	<div id="wrapper">
+		
+		<script>
+			$('#options').click(printMissed);
+			populateSelects();
+			$("#lang_provider").change(refreshQuestions);
+			$("#lang_patient").change(refreshQuestions);
+			makeGroups();
+			printQuestions();
+			collapseQuestions();
+		</script>
+			
+	</div>
+  </section>
+  
+  <footer>  
+  </footer>
+</body>  
+</html>

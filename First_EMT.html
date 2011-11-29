@@ -1,19 +1,25 @@
-<!doctype html5>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/> 
 	<title>Language Select</title>
 	
+	<script type="text/javascript" src="js/jquery-1.6.4.js"></script>
+	<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
     <script type="text/javascript" src="js/dynamic_example.js"></script>
-    <script type="text/javascript" src="js/jquery-1.6.4.js"></script>
-
-    <link rel="stylesheet" href="css/Form1.css" type="text/css" />
-    <link rel="stylesheet" href="css/videobox.css" type="text/css" />
+	<script type="text/javascript" src="js/BrowserDetect.js"></script>
+	<link rel="stylesheet" href="css/Questions.css" type="text/css" />
+    <link rel="stylesheet" href="css/print.css" type="text/css" />  
+    <link rel="stylesheet" href="css/jquery.lightbox-0.5.css" media="screen" />
 
 </head>
 <body>  
 
-	<nav>
+	<!-- Create the persistant footer bar for the pages -->
+    
+	<div id="nav">
 		<div id="back">  
 			<a href="#"><img src="media/images/arrowL.png" height=75px width=75px /></a>
 		</div>
@@ -26,13 +32,19 @@
 		<div id="next" class="flipH">
 			<a href="#"><img src="media/images/arrowL.png" height=75px width=75px /></a>
 		</div>
-	</nav>
+	</div>
 	
-	<div id="lang_list">
+    <!-- End: Footer bar -->
+	<!-- Create the main body area -->
+    
+	<div id="content">
 		<div id="wrapper" />
 	</div>
+    
+	<!-- End: Main area -->
+	<!-- Call scripts' objects to  -->
 
-	<script>
+	<script type="text/javascript">
 		addFlags();
 	</script>
 

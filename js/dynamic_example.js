@@ -22,16 +22,18 @@ xmlDocument = xmlRequest.responseXML;
 // Populate variables from the XML file
 var lang_acronym = {};
 var question_group_list = [];
-var question_list	= xmlDocument.getElementsByTagName("Question");
-var lang_list		= xmlDocument.getElementsByTagName("Language");
+var question_list   = xmlDocument.getElementsByTagName("Question");
+var lang_list       = xmlDocument.getElementsByTagName("Language");
+
+console.log(question_list);
 
 // For each language contained in the recieved XML, extract the full name and associated image/icon
 for (i=0; i<lang_list.length; i++){
     var tuple = [
-			lang_list[i].getElementsByTagName('full')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, ''),
-			lang_list[i].getElementsByTagName('image')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '') ];
-		
-		lang_acronym[lang_list[i].getElementsByTagName('abbr')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '')] = tuple;
+		lang_list[i].getElementsByTagName('full')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, ''),
+		lang_list[i].getElementsByTagName('image')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '')
+        ]
+	lang_acronym[lang_list[i].getElementsByTagName('abbr')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '')] = tuple;
 	// This updates the lang_acronym object list with a [ Abbrev. : (Name of Lang, Image) ] for each language
 }
 
@@ -48,7 +50,6 @@ function makeGroups()
 {
     for( j=0; j<question_list.length; j++ ) {
         var qType = (question_list[j].getElementsByTagName("type"))[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '');
-		console.log( (question_list[j].getElementsByTagName("type"))[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '') ); //DELETE ME
         var makeNew = true;
         for( k=0; k<question_group_list.length; k++ ){
             if( question_group_list[k][0][0] === qType ) {
@@ -56,10 +57,10 @@ function makeGroups()
                 makeNew = false;
             }
         }
-        if(makeNew) question_group_list.push([
+        if(makeNew) question_group_list.push( [
           [ qType,
             $('<div class="slideToggler" id="'+qType+'"><h3>'+qType+'</h3></div>'), 
-            $('<div class="group-div" id="group-'+qType+'" />') ]
+            $('<div class="group-div" id="group-'+qType+'"></div>') ]
           ]);
     }
 }
@@ -73,14 +74,18 @@ function makeGroups()
  */ 
 function populateSelects()
 {
-    var lang = location.href.split("=")[1]; // Since the language abbreviation is appended to the URL we extract the abbrv from the location.href
+    //var lang = location.href.split("=")[1]; // Since the language abbreviation is appended to the URL we extract the abbrv from the location.href
+    
+    var url = $(location).attr('href');
+	var lang = url.split("=")[1];
     
 // Drop menus for language selected by patient and provider - Languages available are populated based on what langauges are found in the XML
     
 	var $lang_patient = $('<select id="lang_patient"></select>');
     var $lang_provider = $('<select id="lang_provider"></select>');
 	
-    $.each(lang_acronym, function(key, value){
+    $.each(lang_acronym, function(key, value)
+    {
         if (key === lang){
             $lang_patient.append('<option selected="selected" value="' + key + 
             '">' + value[0] + '</option>'); 
@@ -95,7 +100,7 @@ function populateSelects()
             $lang_provider.append('<option value="' + key + 
             '">' + value[0] + '</option>'); 
         }
-		console.log(key + " - " + value + " - " + value[0]);
+		console.log(key + " - " + value + " - " + value[0]); // DELETE ME
     });
 // Paste changes into the document body into div#content
 
@@ -131,16 +136,16 @@ function printQuestions()
         
         for (i=1; i<question_group_list[h].length; i++) //and for each question therein... 0 is string value, hence start at 1
         {
-            var $question_div = $('<div id="question-div" class="question-div" />');
+            var $question_div = $('<div id="question-div" class="question-div"></div>');
             $( question_group_list[h][0][2] ).append($question_div);
-            var $anchor = $('<a href="media/video/'+ (question_group_list[h][i][0].getElementsByTagName(patient_lang))[0].getElementsByTagName('video')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '') + '" id="anchor" class ="' + patient_lang + '" caption="' + (question_group_list[h][i][0].getElementsByTagName(patient_lang))[0].childNodes[0].nodeValue + '" >');
+            var $anchor = $('<a href="media/video/'+ (question_group_list[h][i][0].getElementsByTagName(patient_lang))[0].getElementsByTagName('video')[0].childNodes[0].nodeValue.replace(/^\s+|\s+$/g, '') + '" id="anchor" class ="' + patient_lang + '" caption="' + (question_group_list[h][i][0].getElementsByTagName(patient_lang))[0].childNodes[0].nodeValue + '" ></a>');
 
             $question_div.append($anchor);
-            var $question = $('<div class="question">');
+            var $question = $('<div class="question"></div>');
             $anchor.append($question);
-            var $top = $('<div class="top">');
+            var $top = $('<div class="top"></div>');
             $question.append($top);
-            var $bottom = $('<div class="bottom">');
+            var $bottom = $('<div class="bottom"></div>');
             $question.append($bottom);
             $top.append( (question_group_list[h][i][0].getElementsByTagName(patient_lang))[0].childNodes[0].nodeValue );
             $bottom.append( (question_group_list[h][i][0].getElementsByTagName(provider_lang))[0].childNodes[0].nodeValue );
@@ -178,9 +183,9 @@ function addFlags()
 {
     $.each(lang_acronym, function(key, value) 
     {
-        var lang_div = $('<div class="lang">');
+        var lang_div = $('<div class="lang"></div>');
         $('#wrapper').append(lang_div);
-        var lang_anchor = $('<a href="./Questions.html?lang=' + key +'">');
+        var lang_anchor = $('<a href="./Questions.html?lang=' + key + '"></a>');
         $(lang_div).append(lang_anchor);
         var lang_img = $('<img src="media/images/' + value[1] + '" height="113" width="200" alt="' + value[0] + '" />');
         lang_anchor.append(lang_img);
@@ -213,7 +218,8 @@ function collapseQuestions(){
  */
 function printMissed()
 {
-    var print_div = $('<div id="print_div" />');
+    var print_div = $('<div id="print_div"></div>');
+    
     for (h=0; h<question_group_list.length;h++)
     {
         for (i=1; i<question_group_list[h].length; i++)
@@ -240,6 +246,7 @@ function printMissed()
 function assignButtons(question)
 {
     question[1].click( function(){
+        
         question[0] = !question[0];
         
         if( question[0] ) {

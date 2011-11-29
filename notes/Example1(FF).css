@@ -1,0 +1,155 @@
+body{
+	background-color:#433B3B;
+	margin:0px;
+}
+
+#wrapper {
+	width: inherit;
+	text-align:centerline;
+	}
+.top {
+	font-size: xx-large;
+}
+.bottom {
+	font-size: small;
+}
+	
+#lang_list {
+	background-color: #c6c6c6;
+	text-align:center;
+	border-radius: 20px;
+	margin: 10px;
+	margin-bottom:90px; 
+	padding: 20px;
+}
+
+div.lang {
+	display: inline-block;
+	padding: 5px;
+}
+#print_div{
+	display: none;
+}
+
+.flipH {
+	-moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: fliph; /*IE*/
+}
+
+nav {
+	align: center;
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.28, rgb(6,34,112)),
+		color-stop(0.48, rgb(19,60,172)),
+		color-stop(0.82, rgb(71,109,213))
+	);
+	background-image: -moz-linear-gradient(
+		center bottom,
+		rgb(6,34,112) 28%,
+		rgb(19,60,172) 48%,
+		rgb(71,109,213) 82%
+	);
+	height: 80px;
+	width:100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: fixed;
+	bottom: 0px;
+}
+
+.question-div{
+	display: inline-block;
+	width: 90%;
+	margin:5px;
+	border-radius: 20px;
+	border-style: solid;
+	border-width: 2px;
+	background-color: #c6c6ff;
+}
+.question{
+	display: table-cell;
+	padding: 10px 0 10px 74px;
+	font-size: xx-large;
+	vertical-align: middle;
+	width: 80%;
+    float:left;
+}
+	
+a {
+	text-decoration: none;
+	color: #000000;
+}	
+	
+#back, #options, #home, #next {
+	position: fixed;
+	bottom: 3;
+	opacity: 0.5;
+}
+	
+#back {
+	left: 0px;
+}
+
+#options {
+	left: 50%;
+}
+
+#home {
+	right:50%;
+}
+
+#next {
+	right: 0px;
+}
+
+.span-button{
+	display:block;
+}
+
+.question-buttons{
+	float:right;
+	background:blue;
+	height:inherit;
+	width:inherit 20%;
+	clear:none;
+}
+
+div.button{
+	border-radius: 16px 16px 16px 16px;
+	width:64px;
+	height:64px;
+    float:right;
+	clear:none;
+    margin:5px;
+	cursor: pointer; cursor: hand;
+}
+
+.flagged{
+	background:red;
+    border:2px solid salmon;
+}
+
+.neutral{
+	background:teal;
+	border: 2px solid blue;
+}
+
+h3{
+	cursor: pointer; cursor: hand;
+	background-color: #C6C6FF;
+	border-radius: 20px 20px 20px 20px;
+	border: 1px solid black;
+    font-family: fantasy;
+    margin: 9px auto 0;
+    width: 300px;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}

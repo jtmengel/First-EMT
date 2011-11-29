@@ -1,0 +1,163 @@
+body{
+	background-color:#433B3B;
+	margin:0px;
+	font-family:arial;
+	text-align:center;
+}
+
+#wrapper {
+	width: inherit;
+	text-align:centerline;
+	margin-bottom:90px;
+	}
+.top {
+	font-size: xx-large;
+}
+.bottom {
+	font-size: small;
+}
+	
+#lang_list {
+	background-color: #c6c6c6;
+	text-align:center;
+	border-radius: 20px;
+	margin: 10px;
+	margin-bottom:90px; 
+	padding: 20px;
+}
+
+div.lang {
+	display: inline-block;
+	padding: 5px;
+}
+#print_div{
+	display: none;
+}
+
+.flipH {
+	-moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: fliph; /*IE*/
+}
+
+.question-div{
+	display: inline-block;
+	width: 90%;
+	margin:5px;
+	border-radius: 20px;
+	border-style: solid;
+	border-width: 2px;
+	background-color: #c6c6ff;
+}
+.question{
+	display: table-cell;
+	padding: 10px 0 10px 74px;
+	font-size: xx-large;
+	vertical-align: middle;
+	width: 80%;
+    float:left;
+}
+	
+a {
+	text-decoration: none;
+	color: #000000;
+}	
+
+
+.span-button{
+	display:block;
+}
+
+.question-buttons{
+	float:right;
+	background:blue;
+	height:inherit;
+	width:inherit 20%;
+	clear:none;
+}
+
+div.button{
+	border-radius: 16px 16px 16px 16px;
+	width:64px;
+	height:64px;
+    float:right;
+	clear:none;
+    margin:5px;
+	cursor: pointer; cursor: hand;
+}
+
+.flagged{
+	background:red;
+    border:2px solid salmon;
+}
+
+.neutral{
+	background:teal;
+	border: 2px solid blue;
+}
+
+h3{
+	cursor: pointer; cursor: hand;
+	background-color: #C6C6FF;
+	border-radius: 20px 20px 20px 20px;
+	border: 1px solid black;
+    font-family: Arial;
+    margin: 9px auto 0;
+    width: 300px;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+// Nav bar Styles
+
+div#nav{
+	align: center;
+	
+	
+	/* IE10 */ 
+	background-image: -ms-linear-gradient(top, #BDC1FF 0%, #3232FA 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #BDC1FF 0%, #3232FA 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #BDC1FF 0%, #3232FA 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #BDC1FF), color-stop(1, #3232FA));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #BDC1FF 0%, #3232FA 100%);
+	/* Proposed W3C Markup */ 
+	background-image: linear-gradient(top, #BDC1FF 0%, #3232FA 100%);
+	
+	height: 80px;
+	width:100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: fixed;
+	bottom: 0px;
+	background:#fcfcfc;
+}
+	
+#back, #options, #home, #next {
+	position: fixed;
+	bottom: 3px;
+	opacity: 0.5;
+}
+	
+#back {
+	left: 0px;
+}
+
+#options {
+	left: 50%;
+}
+
+#home {
+	right:50%;
+}
+
+#next {
+	right: 0px;
+}
